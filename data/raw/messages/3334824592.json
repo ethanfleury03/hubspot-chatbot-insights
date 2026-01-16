@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "b602cb81-9260-4035-a9b0-72c7ee1347ca",
+      "conversationsThreadId": "3334824592",
+      "createdAt": "2022-10-15T21:36:24.147Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "e108e6338b474500959a1986030ff5d4",
+      "conversationsThreadId": "3334824592",
+      "createdAt": "2022-10-15T21:36:23.915Z",
+      "updatedAt": "2022-10-15T21:36:23.915Z",
+      "createdBy": "V-206901",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-206901",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1f5d50ced439daac03f26293d3f02"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi, please send me your catalog to : Karim.digitalcolor@gmail.com",
+      "richText": "<div>Hi, please send me your catalog to : <a href=\"mailto:Karim.digitalcolor@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">Karim.digitalcolor@gmail.com</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9b942f4653b94b9da69eea81cfd71dab",
+      "conversationsThreadId": "3334824592",
+      "createdAt": "2022-10-15T21:36:23.913Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-206901",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1f5d50ced439daac03f26293d3f02"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

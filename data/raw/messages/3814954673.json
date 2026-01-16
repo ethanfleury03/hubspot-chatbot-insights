@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "2a2b19ef29d8480f8760f83e91b02765",
+      "conversationsThreadId": "3814954673",
+      "createdAt": "2023-01-13T17:33:41.222Z",
+      "updatedAt": "2023-01-13T17:33:41.222Z",
+      "createdBy": "V-495701",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-495701",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "358e12e42c4643b581b9bc26b3b8d5be"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I work for Sirius Archery and we are wanting to bring printing in-house. We need a piece of equipment that prints on arrows has 3 to 4 color options would be able to adjust to size.",
+      "richText": "<div>I work for Sirius Archery and we are wanting to bring printing in-house. We need a piece of equipment that prints on arrows has 3 to 4 color options would be able to adjust to size.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "013d3eac-8c6b-4498-82e8-e4a2008ea232",
+      "conversationsThreadId": "3814954673",
+      "createdAt": "2023-01-13T17:32:51.780Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "14b9fa3fa2ef4a7db5fa07e924750c7c",
+      "conversationsThreadId": "3814954673",
+      "createdAt": "2023-01-13T17:32:51.086Z",
+      "updatedAt": "2023-01-13T17:32:51.086Z",
+      "createdBy": "V-495701",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-495701",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "358e12e42c4643b581b9bc26b3b8d5be"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Im checking on a piece of equipment for my company",
+      "richText": "<div>Im checking on a piece of equipment for my company</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "09ce40eeb636446dada99f3a862a97a7",
+      "conversationsThreadId": "3814954673",
+      "createdAt": "2023-01-13T17:32:51.084Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-495701",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "358e12e42c4643b581b9bc26b3b8d5be"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

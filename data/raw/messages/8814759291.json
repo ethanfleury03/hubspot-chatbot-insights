@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "79bb4faf-5bf5-4be9-9d26-fd8235fdde8b",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-28T00:53:26.579Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "5d513b1d-909b-4089-9526-978908addc1a",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-27T00:05:07.366Z",
+      "updatedAt": "2025-02-27T00:05:07.366Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-102448988291",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "81c3d1841d9940aca43d65fa6f05308d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "d6961692-52fd-461f-beff-d10bdbd68861",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-27T00:05:06.681Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "b2c5eb9d-b5fe-4358-ac49-374c400b936f",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-27T00:05:06.664Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "30d0752a936845beafb28f1be601866d",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-27T00:05:05.775Z",
+      "updatedAt": "2025-02-27T00:05:05.775Z",
+      "createdBy": "V-102448988291",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-102448988291",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "81c3d1841d9940aca43d65fa6f05308d"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "\n\nWikipedia is considered to be the World’s most significant tool for reference material. The Wiki links show up on the 1st page of Google 97% of the time. With a Page on one of the most revered reference tools, you are sure to get yourself or your business noticed. So if you're thinking of getting a Wikipedia Page created, it's the best time of the year.\nIf you are interested in getting more information just respond back to this email.\nThanks,\nChloe Martin\nSales Executive\nWiki Thinkers\nchloe@wikithinkersllc.com\nRespond with stop to optout.",
+      "richText": "<div><br><br>Wikipedia is considered to be the World’s most significant tool for reference material. The Wiki links show up on the 1st page of Google 97% of the time. With a Page on one of the most revered reference tools, you are sure to get yourself or your business noticed. So if you&#x27;re thinking of getting a Wikipedia Page created, it&#x27;s the best time of the year.<br>If you are interested in getting more information just respond back to this email.<br>Thanks,<br>Chloe Martin<br>Sales Executive<br>Wiki Thinkers<br><a href=\"mailto:chloe@wikithinkersllc.com\" target=\"_blank\" rel=\"noopener noreferrer\">chloe@wikithinkersllc.com</a><br>Respond with stop to optout.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "1ba91f33-0ccb-4cb5-96f1-53613255d201",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-27T00:05:05.773Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-102448988291",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "81c3d1841d9940aca43d65fa6f05308d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "af280e7d-6f18-4b9e-a124-11abdf6bbaab",
+      "conversationsThreadId": "8814759291",
+      "createdAt": "2025-02-27T00:05:05.772Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-102448988291",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "81c3d1841d9940aca43d65fa6f05308d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "mode": "full-thread",
+  "requestParams": {
+    "inboxId": null,
+    "archived": false,
+    "scanLimit": 400,
+    "includeThreadDetails": false
+  },
+  "selectedThreadId": "5108583549",
+  "scannedThreads": 136,
+  "requiredPrompts": [
+    "what are you looking for",
+    "what is your name",
+    "what is a good email address to contact you with",
+    "what is your country/region",
+    "what is your good contact number to contact you with",
+    "our team member will contact you shortly"
+  ],
+  "matches": [
+    {
+      "prompt": "what are you looking for",
+      "messageIndex": 1,
+      "createdAt": "2023-08-05T22:11:11.426Z",
+      "text": "What are you looking for?"
+    },
+    {
+      "prompt": "what is your name",
+      "messageIndex": 3,
+      "createdAt": "2023-08-05T22:11:12.828Z",
+      "text": "What is your name?"
+    },
+    {
+      "prompt": "what is a good email address to contact you with",
+      "messageIndex": 5,
+      "createdAt": "2023-08-05T22:11:31.729Z",
+      "text": "What is a good email address to contact you with?"
+    },
+    {
+      "prompt": "what is your country/region",
+      "messageIndex": 7,
+      "createdAt": "2023-08-05T22:11:50.534Z",
+      "text": "What is your country/ region?"
+    },
+    {
+      "prompt": "what is your good contact number to contact you with",
+      "messageIndex": 9,
+      "createdAt": "2023-08-05T22:12:04.086Z",
+      "text": "What is your good contact number to contact you with?"
+    },
+    {
+      "prompt": "our team member will contact you shortly",
+      "messageIndex": 11,
+      "createdAt": "2023-08-05T22:12:17.580Z",
+      "text": "Our Team Member will contact you shortly!"
+    }
+  ],
+  "maxMsgsToCheck": 60,
+  "pagesFetched": 1,
+  "fetchedAt": "2026-01-16T20:23:12.091178+00:00"
+}

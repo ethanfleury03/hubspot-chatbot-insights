@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "a013e02d-0b5e-4e1f-9e47-0d123103d629",
+      "conversationsThreadId": "3792938381",
+      "createdAt": "2023-01-10T17:32:06.513Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "103f97c5cdf14a6e9bfd69be15c2a741",
+      "conversationsThreadId": "3792938381",
+      "createdAt": "2023-01-10T17:32:06.220Z",
+      "updatedAt": "2023-01-10T17:32:06.220Z",
+      "createdBy": "V-483151",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-483151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "7735a8eaf5fd474f96fc353a35aeb681"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "i need a few of the gerber edge fx printers. Are you able to help?",
+      "richText": "<div>i need a few of the gerber edge fx printers. Are you able to help?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b89f0d89326c471c898c076104ce6b57",
+      "conversationsThreadId": "3792938381",
+      "createdAt": "2023-01-10T17:32:06.218Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-483151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "7735a8eaf5fd474f96fc353a35aeb681"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

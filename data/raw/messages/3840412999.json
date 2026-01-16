@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "6ec13916-62e8-47f0-8bbb-11074078da77",
+      "conversationsThreadId": "3840412999",
+      "createdAt": "2023-01-18T14:56:47.639Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "188185bb52c24b4e9c815df7a80eb29a",
+      "conversationsThreadId": "3840412999",
+      "createdAt": "2023-01-18T14:56:47.352Z",
+      "updatedAt": "2023-01-18T14:56:47.352Z",
+      "createdBy": "V-514251",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-514251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "417148efccfb45ebad35dca80a1fbde8"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "hello Could you help me in chosing the best solution for Aircraft cabin interior printing?",
+      "richText": "<div>hello Could you help me in chosing the best solution for Aircraft cabin interior printing?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "abd07ed23fbf4b03a0d34444e7f0c4a6",
+      "conversationsThreadId": "3840412999",
+      "createdAt": "2023-01-18T14:56:47.350Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-514251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "417148efccfb45ebad35dca80a1fbde8"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "0f3c2b08-7576-4e37-b315-45ba8994c8b9",
+      "conversationsThreadId": "3758496813",
+      "createdAt": "2023-01-04T03:01:21.909Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "053a8d8c302141e1bf17cc1f9d39131e",
+      "conversationsThreadId": "3758496813",
+      "createdAt": "2023-01-04T03:01:21.450Z",
+      "updatedAt": "2023-01-04T03:01:21.450Z",
+      "createdBy": "V-458801",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-458801",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "995f59f80cf346a3b55bd08cb9a83d38"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I currently buy my labels from a printing company. Paying 15 cents a label. Can your company help me lower my costs?",
+      "richText": "<div>I currently buy my labels from a printing company. Paying 15 cents a label. Can your company help me lower my costs?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "cb8f6861608a4d5db5218c07143d3361",
+      "conversationsThreadId": "3758496813",
+      "createdAt": "2023-01-04T03:01:21.448Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-458801",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "995f59f80cf346a3b55bd08cb9a83d38"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

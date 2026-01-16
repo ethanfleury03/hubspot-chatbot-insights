@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "8df0da03-d0b6-4e99-b7c0-a1b68642a9b9",
+      "conversationsThreadId": "3779183644",
+      "createdAt": "2023-01-08T06:24:28.225Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "519f992436174322a011bb3d537af045",
+      "conversationsThreadId": "3779183644",
+      "createdAt": "2023-01-08T06:24:27.779Z",
+      "updatedAt": "2023-01-08T06:24:27.779Z",
+      "createdBy": "V-474201",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-474201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b4a65ba8df04f5ebff4ae004dadd172"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I love Hubspot. GOod for you guys!   So, I need to print the same bags that everyone else that comes here asks you about.   I need to print the small mylar marijuana bags",
+      "richText": "<div>I love Hubspot. GOod for you guys!   So, I need to print the same bags that everyone else that comes here asks you about.   I need to print the small mylar marijuana bags</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "d98c91f7b886468c8ce95854cff8d68c",
+      "conversationsThreadId": "3779183644",
+      "createdAt": "2023-01-08T06:24:27.777Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-474201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b4a65ba8df04f5ebff4ae004dadd172"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "837c961f-abdf-4b99-847a-5169357ab4f1",
+      "conversationsThreadId": "3310844012",
+      "createdAt": "2022-10-11T17:34:26.399Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "a8d9f6cd7c3d4b48b4e6649bf0d9a89a",
+      "conversationsThreadId": "3310844012",
+      "createdAt": "2022-10-11T17:34:25.896Z",
+      "updatedAt": "2022-10-11T17:34:25.896Z",
+      "createdBy": "V-191951",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-191951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "698d990fea114f65b173b0576a9694ca"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hello.  I work for a medical device company and am searching for color label solutions for medical device labeling (compliance controlled).  Are there any specifications available for: color spectrum (full or limited colors), maximum print width, label stock types accepted, print resolution, etc.",
+      "richText": "<div>Hello.  I work for a medical device company and am searching for color label solutions for medical device labeling (compliance controlled).  Are there any specifications available for: color spectrum (full or limited colors), maximum print width, label stock types accepted, print resolution, etc.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "95b575ea6b9e4b82b28c43e2fd171b7a",
+      "conversationsThreadId": "3310844012",
+      "createdAt": "2022-10-11T17:34:25.894Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-191951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "698d990fea114f65b173b0576a9694ca"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

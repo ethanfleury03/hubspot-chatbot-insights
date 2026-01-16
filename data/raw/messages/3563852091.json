@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "1f8394a6-a24e-49de-bb52-c34322b65b9b",
+      "conversationsThreadId": "3563852091",
+      "createdAt": "2022-11-25T23:59:48.934Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "ff0086e75e874c859ccb63b1b64418c1",
+      "conversationsThreadId": "3563852091",
+      "createdAt": "2022-11-25T23:59:48.269Z",
+      "updatedAt": "2022-11-25T23:59:48.269Z",
+      "createdBy": "V-340751",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-340751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3f3ea2adf7fc4d0e898b0d003c1074f0"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Do you have a leasing program? ",
+      "richText": "<div>Do you have a leasing program? </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "e6fb7691be464c67979c2e92b05ecd08",
+      "conversationsThreadId": "3563852091",
+      "createdAt": "2022-11-25T23:59:48.267Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-340751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3f3ea2adf7fc4d0e898b0d003c1074f0"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

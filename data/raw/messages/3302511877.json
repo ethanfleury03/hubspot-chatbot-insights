@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "1e65efc6-b0ec-457b-82a1-b2a3ec1a28bf",
+      "conversationsThreadId": "3302511877",
+      "createdAt": "2022-10-10T13:46:42.095Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "324726d75c6d41c8a3b4453444c7e5ee",
+      "conversationsThreadId": "3302511877",
+      "createdAt": "2022-10-10T13:46:41.601Z",
+      "updatedAt": "2022-10-10T13:46:41.601Z",
+      "createdBy": "V-152951",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-152951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "092000ca16dc493a897b935ed3bf2dc4"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I don't see any shipping options available on your site. How is shipping done once a product is ordered",
+      "richText": "<div>I don&#x27;t see any shipping options available on your site. How is shipping done once a product is ordered</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "e47f61a81d8a4ff785ad6a3150a367d9",
+      "conversationsThreadId": "3302511877",
+      "createdAt": "2022-10-10T13:46:41.599Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-152951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "092000ca16dc493a897b935ed3bf2dc4"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

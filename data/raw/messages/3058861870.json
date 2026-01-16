@@ -1,0 +1,137 @@
+{
+  "results": [
+    {
+      "id": "0877ee75-e522-46e0-9e07-843ee1948847",
+      "conversationsThreadId": "3058861870",
+      "createdAt": "2022-08-22T12:44:06.437Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "A-46516809",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "be9bf1f1a1844066a1aeaa2b8f59b767",
+      "conversationsThreadId": "3058861870",
+      "createdAt": "2022-08-22T12:44:06.152Z",
+      "updatedAt": "2022-08-22T12:44:06.152Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "55ac7bb05a2c4e0885aeb049f5fd097f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Hi Sir,",
+      "richText": "<div style=\"text-align: left\">Hi Sir,</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "99b563e5-ceaf-488f-a4ab-6c978ccab9ba",
+      "conversationsThreadId": "3058861870",
+      "createdAt": "2022-08-22T11:44:36.679Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "c73a591486de46b2ae8d4b2b3ceadc1a",
+      "conversationsThreadId": "3058861870",
+      "createdAt": "2022-08-22T11:44:36.083Z",
+      "updatedAt": "2022-08-22T11:44:36.083Z",
+      "createdBy": "V-1551",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-1551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "55ac7bb05a2c4e0885aeb049f5fd097f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "What is the price for an Arrow Jet Nova 250R in $NZ and do you have a supplier in New Zealand? Thanks",
+      "richText": "<div>What is the price for an Arrow Jet Nova 250R in $NZ and do you have a supplier in New Zealand? Thanks</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "bf3a6c9bdc654273be10fa4d264544f8",
+      "conversationsThreadId": "3058861870",
+      "createdAt": "2022-08-22T11:44:36.081Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "55ac7bb05a2c4e0885aeb049f5fd097f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

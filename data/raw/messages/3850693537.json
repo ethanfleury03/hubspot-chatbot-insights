@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "f39761ac569340d29c540d347b2da0be",
+      "conversationsThreadId": "3850693537",
+      "createdAt": "2023-01-19T20:49:33.924Z",
+      "updatedAt": "2023-01-19T20:49:33.924Z",
+      "createdBy": "V-521601",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-521601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a3a2c65b488740ceb1238a2662c667c8"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "state-of-the-art digital roll printing. We have the project for your machine. Could you please give me a price integrated with printing and laser cutting?",
+      "richText": "<div>state-of-the-art digital roll printing. We have the project for your machine. Could you please give me a price integrated with printing and laser cutting?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "32cb357e-df06-4e5f-a632-f305d1d64e56",
+      "conversationsThreadId": "3850693537",
+      "createdAt": "2023-01-19T20:47:12.496Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "e641d21ff47848579c3a9b4b6ce23eeb",
+      "conversationsThreadId": "3850693537",
+      "createdAt": "2023-01-19T20:47:11.829Z",
+      "updatedAt": "2023-01-19T20:47:11.829Z",
+      "createdBy": "V-521601",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-521601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a3a2c65b488740ceb1238a2662c667c8"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi,",
+      "richText": "<div>Hi,</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "084378564adf44c487667cfff687aa76",
+      "conversationsThreadId": "3850693537",
+      "createdAt": "2023-01-19T20:47:11.827Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-521601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a3a2c65b488740ceb1238a2662c667c8"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

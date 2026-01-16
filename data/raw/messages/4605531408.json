@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "cdc79b13-6aa2-481e-a53a-8cee354336e5",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-25T07:55:09.768Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "bc916550-13e7-4813-b04d-220c41edb333",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-24T07:23:40.655Z",
+      "updatedAt": "2023-05-24T07:23:40.655Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-972051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a29a32e6c23c4795bf0bdd7979f02dda"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "6fd3929c-a34c-4ac0-900d-b6ff3beb2c34",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-24T07:23:39.989Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "7cf31d92-c106-41fa-b2a8-f43c31ff1255",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-24T07:23:39.974Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "3e3e052a78ba406096d8e6a5cd54b7c8",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-24T07:23:39.684Z",
+      "updatedAt": "2023-05-24T07:23:39.684Z",
+      "createdBy": "V-972051",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-972051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a29a32e6c23c4795bf0bdd7979f02dda"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Dear purchasing manager,\nI am Ken Liu, We specialized in manufacturing paper printing packaging for more than 10 years. We can do the following products:\n1) paper box, color box, gift box, wine box.\n2) bag.\n3) sticker, label.\n4) display stands.\n5) Round box.\nIf you want to know more offers, please contact us.\nThank you.\nBest regards,\nKen Liu,\nEmail: ken@greencolor-print.com,\nMob: 86)13632466964,\nSkype: ken420546,\nWhatsApp: +86 13632466964,\nWebsite: www.greencolorprint.com\n\n",
+      "richText": "<div>Dear purchasing manager,\nI am Ken Liu, We specialized in manufacturing paper printing packaging for more than 10 years. We can do the following products:\n1) paper box, color box, gift box, wine box.\n2) bag.\n3) sticker, label.\n4) display stands.\n5) Round box.\nIf you want to know more offers, please contact us.\nThank you.\nBest regards,\nKen Liu,\nEmail: <a href=\"mailto:ken@greencolor-print.com\" target=\"_blank\" rel=\"noopener noreferrer\">ken@greencolor-print.com</a>,\nMob: 86)13632466964,\nSkype: ken420546,\nWhatsApp: +86 13632466964,\nWebsite: <a href=\"http://www.greencolorprint.com\" target=\"_blank\" rel=\"noopener noreferrer\">www.greencolorprint.com</a>\n\n</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "59620642-b2bc-409a-8c54-02a97a8287e0",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-24T07:23:39.682Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-972051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a29a32e6c23c4795bf0bdd7979f02dda"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "190d623bae194daea87c81282cd7142a",
+      "conversationsThreadId": "4605531408",
+      "createdAt": "2023-05-24T07:23:39.681Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-972051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a29a32e6c23c4795bf0bdd7979f02dda"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

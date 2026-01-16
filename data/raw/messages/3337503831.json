@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "745ba4f1-2a33-4f07-8ca7-df6858bd4709",
+      "conversationsThreadId": "3337503831",
+      "createdAt": "2022-10-17T01:00:22.590Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "e529ce5adaa742fc91eabb944d44e1a3",
+      "conversationsThreadId": "3337503831",
+      "createdAt": "2022-10-17T01:00:22.158Z",
+      "updatedAt": "2022-10-17T01:00:22.158Z",
+      "createdBy": "V-209301",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-209301",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "7e43d229e094477492cfc6bff1f252c9"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I am needing food safe Mylar windowed bags . I am confused what mil the 4” x 6” stand up pouches are?",
+      "richText": "<div>I am needing food safe Mylar windowed bags . I am confused what mil the 4” x 6” stand up pouches are?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "7cfced79fe664a65b4086402b03f3712",
+      "conversationsThreadId": "3337503831",
+      "createdAt": "2022-10-17T01:00:22.156Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-209301",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "7e43d229e094477492cfc6bff1f252c9"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

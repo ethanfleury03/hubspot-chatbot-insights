@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "2b0eac4a-2b68-426a-826d-eaf55f44bbe7",
+      "conversationsThreadId": "3167779190",
+      "createdAt": "2022-09-13T22:49:29.926Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "7f516027825841a58ef73e167bf4cfca",
+      "conversationsThreadId": "3167779190",
+      "createdAt": "2022-09-13T22:49:29.368Z",
+      "updatedAt": "2022-09-13T22:49:29.368Z",
+      "createdBy": "V-92301",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-92301",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "69004d36e58c470bbaeaa0cf8ec6e96b"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "We are looking for small print and cut system for self adhesive labels",
+      "richText": "<div>We are looking for small print and cut system for self adhesive labels</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "8cad61f9b53b4825b8a9e464d0f21a23",
+      "conversationsThreadId": "3167779190",
+      "createdAt": "2022-09-13T22:49:29.366Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-92301",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "69004d36e58c470bbaeaa0cf8ec6e96b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

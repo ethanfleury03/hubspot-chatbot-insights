@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "eeaf9518acdb45cda4029c4d5d1b8f0a",
+      "conversationsThreadId": "3529842332",
+      "createdAt": "2022-11-20T08:26:29.094Z",
+      "updatedAt": "2022-11-20T08:26:29.094Z",
+      "createdBy": "V-323451",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-323451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "b0c7182c26214fa79cce51b96ab8d489"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I need foil packaging mini printer ",
+      "richText": "<div>I need foil packaging mini printer </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "2eb6527a-4018-4aff-b0a9-6e36ddb8e065",
+      "conversationsThreadId": "3529842332",
+      "createdAt": "2022-11-20T08:25:41.244Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "93739634721843fb95e7cf7757c3e940",
+      "conversationsThreadId": "3529842332",
+      "createdAt": "2022-11-20T08:25:40.800Z",
+      "updatedAt": "2022-11-20T08:25:40.800Z",
+      "createdBy": "V-323451",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-323451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "b0c7182c26214fa79cce51b96ab8d489"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hii sir ",
+      "richText": "<div>Hii sir </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "3e58b8ae1a464aa3859864fe12a14a61",
+      "conversationsThreadId": "3529842332",
+      "createdAt": "2022-11-20T08:25:40.798Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-323451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "b0c7182c26214fa79cce51b96ab8d489"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

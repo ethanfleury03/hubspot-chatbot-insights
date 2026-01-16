@@ -1,0 +1,498 @@
+{
+  "results": [
+    {
+      "id": "2456162c-214c-41bd-83ab-1560e2576b53",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:52.160Z",
+      "updatedAt": "2024-01-29T08:39:52.160Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Thanks. We’ve passed along this information. A member of our team will be in touch soon.",
+      "richText": "<div>Thanks. We’ve passed along this information. A member of our team will be in touch soon.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "dd8d3123-90ec-4a74-b0d3-12c4122bc59a",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:49.740Z",
+      "updatedAt": "2024-01-29T08:39:49.740Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Our Team Member will contact you shortly!",
+      "richText": "<div>Our Team Member will contact you shortly!</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "82cd61d0-74e2-4ad9-8069-71a6734f811b",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:49.012Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedFrom": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "14704da9ff5c42689e72dce877665e66",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:47.892Z",
+      "updatedAt": "2024-01-29T08:39:47.892Z",
+      "createdBy": "V-1828251",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "+460705383227",
+      "richText": "<div><a href=\"tel:+460705383227\" target=\"_blank\" rel=\"noopener noreferrer\">+460705383227</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "fc1bba10-c1f8-491c-88ef-520f1a03c13e",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:10.931Z",
+      "updatedAt": "2024-01-29T08:39:10.931Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your good contact number to contact you with?",
+      "richText": "<div>What is your good contact number to contact you with?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "be6aa26d192c47a4b3859df38e74b532",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:08.382Z",
+      "updatedAt": "2024-01-29T08:39:08.382Z",
+      "createdBy": "V-1828251",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Sweden",
+      "richText": "<div>Sweden</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "cf3260cf-1f68-4122-8125-1da21f9cf0ce",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:02.658Z",
+      "updatedAt": "2024-01-29T08:39:02.658Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your country/ region?",
+      "richText": "<div>What is your country/ region?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "91b286d4e24945679dd3748bc53c5b29",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:39:01.181Z",
+      "updatedAt": "2024-01-29T08:39:01.181Z",
+      "createdBy": "V-1828251",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "rosanalopes@bestimpactconsulting.com",
+      "richText": "<div><a href=\"mailto:rosanalopes@bestimpactconsulting.com\" target=\"_blank\" rel=\"noopener noreferrer\">rosanalopes@bestimpactconsulting.com</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "cadd4a0d-97c6-49ca-9b77-fb952d889bd0",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:38.484Z",
+      "updatedAt": "2024-01-29T08:38:38.484Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is a good email address to contact you with?",
+      "richText": "<div>What is a good email address to contact you with?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "eb00e91dc9a94bd783d04ae0d9ea4b77",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:35.661Z",
+      "updatedAt": "2024-01-29T08:38:35.661Z",
+      "createdBy": "V-1828251",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Rosana",
+      "richText": "<div>Rosana</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "e733e09d-8ebc-4dcd-a79a-786665e989a9",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:30.145Z",
+      "updatedAt": "2024-01-29T08:38:30.145Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "47d78817-3e02-42fd-9dee-9f779f671777",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:29.581Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "c2415cc8-8e13-47fd-a90b-2d995de0b8b7",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:29.460Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "b4b890ff405d425a8d821caa2c38a7a1",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:28.761Z",
+      "updatedAt": "2024-01-29T08:38:28.761Z",
+      "createdBy": "V-1828251",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi are you going to participate in DRUPA Düsseldorf",
+      "richText": "<div>Hi are you going to participate in DRUPA Düsseldorf</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "75f6eac9-5b31-4cb9-872d-4749df4a9a86",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:28.759Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "816d005a7d6a4030a8f586d34810dd1a",
+      "conversationsThreadId": "6378795099",
+      "createdAt": "2024-01-29T08:38:28.758Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1828251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "8b27e68c829f494fb9a1af9af9259a6f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "21221208-4a2b-4741-a7a7-28cefda8a219",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-08T01:58:53.234Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "90f07083-50a8-462f-9779-68009ac349a5",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-07T01:35:57.347Z",
+      "updatedAt": "2023-12-07T01:35:57.347Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1672151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "5a025a07873a4dd28aab81afe4b50624"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "54c5c51a-e5f2-42c0-82bb-36af23898705",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-07T01:35:56.805Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "dfe5d5a3-7dea-479c-8b1c-4a8f565361f3",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-07T01:35:56.670Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "e78ef78d0f65472296e4686f027ab064",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-07T01:35:56.207Z",
+      "updatedAt": "2023-12-07T01:35:56.207Z",
+      "createdBy": "V-1672151",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-1672151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "5a025a07873a4dd28aab81afe4b50624"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Looking for a lease price on the ARROWJET NOVA 330R",
+      "richText": "<div>Looking for a lease price on the ARROWJET NOVA 330R</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "60f8cdf8-7d7a-40c9-b284-e3c253d46778",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-07T01:35:56.205Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1672151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "5a025a07873a4dd28aab81afe4b50624"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "e5cbe3b6d0b3448fa783a87c65671d92",
+      "conversationsThreadId": "6021540245",
+      "createdAt": "2023-12-07T01:35:56.204Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1672151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "5a025a07873a4dd28aab81afe4b50624"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

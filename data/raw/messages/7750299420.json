@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "85781e4e-c019-4743-949b-cb315563ffff",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-13T21:25:40.259Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "d0fa721f-b5b4-41b5-9da0-d2f02258adee",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-12T20:59:33.889Z",
+      "updatedAt": "2024-08-12T20:59:33.889Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-47892847451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "43fa50db58ba469ab0e04f39e6d15d0b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "f927c5d9-f747-4e34-a7bf-4bc29a5ac43c",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-12T20:59:33.221Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "fa210152-c1bd-4194-b62b-8eaf2f8fb4e6",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-12T20:59:33.209Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "a11ae1e7b19d40f094f48c4a05b17035",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-12T20:59:32.767Z",
+      "updatedAt": "2024-08-12T20:59:32.508Z",
+      "createdBy": "V-47892847451",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-47892847451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "43fa50db58ba469ab0e04f39e6d15d0b"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi, owner of arrsys.com\nWe want to introduce you to [Chat Data](https://www.chat-data.com), a powerful AI-powered customer support solution that can enhance your customer support with powerful AI at 24/7. Simply import your knowledge base and let AI handle your customer while you are away. You can take over the conversation anytime you want.\n\nWith our AI chatbot plus live chat escalation, your customer support workflow will be more efficient and cost-effective, like this: https://cookbook.chat-data.com/#workflow\nVisit https://www.chat-data.com to give it a try",
+      "richText": "<div>Hi, owner of <a href=\"http://arrsys.com\" target=\"_blank\" rel=\"noopener noreferrer\">arrsys.com</a><br>We want to introduce you to [Chat Data](<a href=\"https://www.chat-data.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.chat-data.com</a>), a powerful AI-powered customer support solution that can enhance your customer support with powerful AI at 24/7. Simply import your knowledge base and let AI handle your customer while you are away. You can take over the conversation anytime you want.<br><br>With our AI chatbot plus live chat escalation, your customer support workflow will be more efficient and cost-effective, like this: <a href=\"https://cookbook.chat-data.com/#workflow\" target=\"_blank\" rel=\"noopener noreferrer\">https://cookbook.chat-data.com/#workflow</a><br>Visit <a href=\"https://www.chat-data.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.chat-data.com</a> to give it a try</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "56836e1c-6f53-47fc-9811-0247b11aa701",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-12T20:59:32.765Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-47892847451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "43fa50db58ba469ab0e04f39e6d15d0b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "9988f8f791e64d60b83084ddce51595b",
+      "conversationsThreadId": "7750299420",
+      "createdAt": "2024-08-12T20:59:32.764Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-47892847451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "43fa50db58ba469ab0e04f39e6d15d0b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

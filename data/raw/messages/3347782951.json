@@ -1,0 +1,169 @@
+{
+  "results": [
+    {
+      "id": "ad2fdd43-a6b7-430f-9c19-4043f542d630",
+      "conversationsThreadId": "3347782951",
+      "createdAt": "2022-10-19T04:47:29.032Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "A-46516809",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "deccc3f8f56f4082961ea16d0feddc82",
+      "conversationsThreadId": "3347782951",
+      "createdAt": "2022-10-19T04:47:27.562Z",
+      "updatedAt": "2022-10-19T04:47:27.562Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-215851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "215851"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "yes",
+      "richText": "<div style=\"text-align: left\">yes</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "184dbbbb0f164dba923ffc6af2a4a661",
+      "conversationsThreadId": "3347782951",
+      "createdAt": "2022-10-18T15:31:42.569Z",
+      "updatedAt": "2022-10-18T15:31:42.569Z",
+      "createdBy": "V-215851",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-215851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "d3f3262b82984be9b307400b0784ba05"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Do you guys do labelling for cosmetic products?",
+      "richText": "<div>Do you guys do labelling for cosmetic products?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "580bfe38-0b3c-49a6-ba34-9753f1baab5b",
+      "conversationsThreadId": "3347782951",
+      "createdAt": "2022-10-18T15:31:03.443Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "22ccd3db9bf14750bbfed2d484b83783",
+      "conversationsThreadId": "3347782951",
+      "createdAt": "2022-10-18T15:31:02.449Z",
+      "updatedAt": "2022-10-18T15:31:02.449Z",
+      "createdBy": "V-215851",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-215851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "d3f3262b82984be9b307400b0784ba05"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "hello",
+      "richText": "<div>hello</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "33bc58bc58584a1fb098a13643f00fc0",
+      "conversationsThreadId": "3347782951",
+      "createdAt": "2022-10-18T15:31:02.447Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-215851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "d3f3262b82984be9b307400b0784ba05"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

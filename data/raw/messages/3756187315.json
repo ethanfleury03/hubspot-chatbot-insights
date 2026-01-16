@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "cea5205a-91be-49ba-8613-2e1664189ba9",
+      "conversationsThreadId": "3756187315",
+      "createdAt": "2023-01-03T19:05:47.213Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "058a25efc2a24eb9b0814a525670a603",
+      "conversationsThreadId": "3756187315",
+      "createdAt": "2023-01-03T19:05:46.463Z",
+      "updatedAt": "2023-01-03T19:05:46.463Z",
+      "createdBy": "V-457501",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-457501",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "16526327ec72481ba34958c99b5b3ff1"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hello I am trying to get a quote for a printer. I JUST recently started a small business involving popsicles and would like a small printer to print logos and information on Mylar or poly bags. ",
+      "richText": "<div>Hello I am trying to get a quote for a printer. I JUST recently started a small business involving popsicles and would like a small printer to print logos and information on Mylar or poly bags. </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "628ffef934ce4682b74197f9493d8f07",
+      "conversationsThreadId": "3756187315",
+      "createdAt": "2023-01-03T19:05:46.461Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-457501",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "16526327ec72481ba34958c99b5b3ff1"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

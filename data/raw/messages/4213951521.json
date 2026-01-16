@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "7f94fb94-fbad-43bb-888e-085490881c88",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-22T22:55:25.395Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "ebb58b5a-7efe-4ccc-82ba-00ee794e9f7c",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-21T22:32:54.718Z",
+      "updatedAt": "2023-03-21T22:32:54.718Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-747101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f171ada0ba954035bcbf052bad3e477d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "fafdf04a-6d5f-4814-8dae-b972bf1dce29",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-21T22:32:54.148Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "589949d5-b8a6-4228-adf1-6a4e14ed0cd5",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-21T22:32:53.997Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "68d29d4847fe405fb6e40500a99570d0",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-21T22:32:53.258Z",
+      "updatedAt": "2023-03-21T22:32:53.258Z",
+      "createdBy": "V-747101",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-747101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f171ada0ba954035bcbf052bad3e477d"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hello, I am using ImagePrint 12 currently  .I don't know if it's a competitor  to you your Company or not.I'm finding it difficult  to always call them (Eastcoast) Time.What am am in need of a RIP system that has  better Customer service.ImagePrint is a great Company,Great Product . but I find it to be very frustrating.sinse I don't know what to ask to move along.I do Photography  mostly b/w could you direct me to other Rip Systems",
+      "richText": "<div>Hello, I am using ImagePrint 12 currently  .I don&#x27;t know if it&#x27;s a competitor  to you your Company or not.I&#x27;m finding it difficult  to always call them (Eastcoast) Time.What am am in need of a RIP system that has  better Customer service.ImagePrint is a great Company,Great Product . but I find it to be very frustrating.sinse I don&#x27;t know what to ask to move along.I do Photography  mostly b/w could you direct me to other Rip Systems</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "bc8e9e50-260d-4d0d-8939-581a578e58a4",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-21T22:32:53.256Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-747101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f171ada0ba954035bcbf052bad3e477d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "79eac4166fd94118bd07da1c46844c93",
+      "conversationsThreadId": "4213951521",
+      "createdAt": "2023-03-21T22:32:53.255Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-747101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f171ada0ba954035bcbf052bad3e477d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

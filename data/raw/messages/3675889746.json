@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "d9a19023-e45e-4ddb-b3d7-63d967cdfe79",
+      "conversationsThreadId": "3675889746",
+      "createdAt": "2022-12-15T21:45:57.253Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "2c0605afb7c04df29b8a1809576e59eb",
+      "conversationsThreadId": "3675889746",
+      "createdAt": "2022-12-15T21:45:56.983Z",
+      "updatedAt": "2022-12-15T21:45:56.983Z",
+      "createdBy": "V-406751",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-406751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "aee5a0bd83354db89fced1fa9f1e0295"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi we are looking for gerber bits",
+      "richText": "<div>Hi we are looking for gerber bits</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "f052c011e4f44fc3a2b2947ca1e8d89f",
+      "conversationsThreadId": "3675889746",
+      "createdAt": "2022-12-15T21:45:56.981Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-406751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "aee5a0bd83354db89fced1fa9f1e0295"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

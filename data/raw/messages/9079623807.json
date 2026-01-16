@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "2434ec96-c064-4256-b067-ab585a1014bb",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-27T01:57:33.081Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "8bf8cab6-4bba-4200-91ad-29bf15de0c8f",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-26T01:17:40.323Z",
+      "updatedAt": "2025-04-26T01:17:40.323Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-117107152033",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6e2e1dce9aa94dd6aa9bbaf9f7b9b0a6"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "68cfa601-0e4a-4ffb-a2fe-cf1349ff90b2",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-26T01:17:39.631Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "4bdbb8f4-f97b-4a6d-b77c-6099e56880d1",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-26T01:17:39.588Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "e2772b9c7a3543abab5737c622676a0a",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-26T01:17:39.198Z",
+      "updatedAt": "2025-04-26T01:17:39.198Z",
+      "createdBy": "V-117107152033",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-117107152033",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6e2e1dce9aa94dd6aa9bbaf9f7b9b0a6"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Do you sell coffee cups",
+      "richText": "<div>Do you sell coffee cups</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "57ad92f7-a052-48dd-b663-c51660613b52",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-26T01:17:39.196Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-117107152033",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6e2e1dce9aa94dd6aa9bbaf9f7b9b0a6"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "06dbc03c-7be8-40f1-b7bc-ad3fd791be8f",
+      "conversationsThreadId": "9079623807",
+      "createdAt": "2025-04-26T01:17:39.195Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-117107152033",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6e2e1dce9aa94dd6aa9bbaf9f7b9b0a6"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "f9be36817c5743a4a0dd8c6e221aaaa6",
+      "conversationsThreadId": "3363115302",
+      "createdAt": "2022-10-20T19:29:00.995Z",
+      "updatedAt": "2022-10-20T19:29:00.995Z",
+      "createdBy": "V-217451",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-217451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "59c8c42c74c3406692fe84122781d58e"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "actually it looks like it needs to be printed onto a special film and then formed with a machine.  I'm looking for something to print directly onto cheap mylar bags from china.",
+      "richText": "<div>actually it looks like it needs to be printed onto a special film and then formed with a machine.  I&#x27;m looking for something to print directly onto cheap mylar bags from china.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "19852076-3320-4f76-8e00-2f1110509f15",
+      "conversationsThreadId": "3363115302",
+      "createdAt": "2022-10-20T19:27:42.260Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "53dcd78008f74caca8a116d693a92e51",
+      "conversationsThreadId": "3363115302",
+      "createdAt": "2022-10-20T19:27:41.532Z",
+      "updatedAt": "2022-10-20T19:27:41.532Z",
+      "createdBy": "V-217451",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-217451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "59c8c42c74c3406692fe84122781d58e"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Does this print on cheap mylar bags from Amazon?  Or do you need polyester aka \"soft pouch\" bags to print on?",
+      "richText": "<div>Does this print on cheap mylar bags from Amazon?  Or do you need polyester aka &quot;soft pouch&quot; bags to print on?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "556b473836994576a6bff76645de01a0",
+      "conversationsThreadId": "3363115302",
+      "createdAt": "2022-10-20T19:27:41.530Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-217451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "59c8c42c74c3406692fe84122781d58e"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

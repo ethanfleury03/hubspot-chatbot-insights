@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "8b10b0f9-8758-496d-adbb-6175ca756d2a",
+      "conversationsThreadId": "3258319645",
+      "createdAt": "2022-10-01T21:22:20.807Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "3f57fccce4fc4cb0aa33259bb6e16042",
+      "conversationsThreadId": "3258319645",
+      "createdAt": "2022-10-01T21:22:20.399Z",
+      "updatedAt": "2022-10-01T21:22:20.399Z",
+      "createdBy": "V-160601",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-160601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "7bda04a657bb468ba68055568f434cad"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "hi I am looking for software that will enable me to print on mylar bags at home",
+      "richText": "<div>hi I am looking for software that will enable me to print on mylar bags at home</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "928ee4040bc8418fbfaf09d2680ae112",
+      "conversationsThreadId": "3258319645",
+      "createdAt": "2022-10-01T21:22:20.397Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-160601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "7bda04a657bb468ba68055568f434cad"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

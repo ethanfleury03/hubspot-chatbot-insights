@@ -1,0 +1,254 @@
+{
+  "results": [
+    {
+      "id": "22eb4097-2241-4c65-9baf-388d81d73ca5",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-30T07:18:28.349Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "40312791-52eb-42b6-b7af-43e516225ddf",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:10.940Z",
+      "updatedAt": "2025-09-29T06:56:10.940Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-159352492098",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1be0334914341add22b180cb5ae17"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is a good email address to contact you with?",
+      "richText": "<div>What is a good email address to contact you with?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "5d9c9afabebb40569c1fddee11b749d3",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:07.829Z",
+      "updatedAt": "2025-09-29T06:56:08.757Z",
+      "createdBy": "V-159352492098",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-159352492098",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1be0334914341add22b180cb5ae17"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "beaversmelissa.mkt@gmail.com",
+      "richText": "<div><a href=\"mailto:beaversmelissa.mkt@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">beaversmelissa.mkt@gmail.com</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "732851ab-440a-455c-b325-a7db7df31338",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:02.114Z",
+      "updatedAt": "2025-09-29T06:56:02.114Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-159352492098",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1be0334914341add22b180cb5ae17"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9f351561-85b3-4782-8ce6-0534f7327f0c",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:01.430Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "0f5ef8e5-40af-419c-a3b4-d693a83f939c",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:01.419Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "5005f78d716e4816b5c604d3527cac97",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:00.958Z",
+      "updatedAt": "2025-09-29T06:56:00.958Z",
+      "createdBy": "V-159352492098",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-159352492098",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1be0334914341add22b180cb5ae17"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hello,\nI would like to offer some suggestions for your website. No cost, no catch and no strings- just an opportunity for you to see how we can improve your website and leads. Increase organic traffic, boost your ranking and visibility.\nWould it be okay to show you the suggestions I have in mind?\nPlease let me know!\nThank you!\nMelissa Beavers",
+      "richText": "<div>Hello,<br>I would like to offer some suggestions for your website. No cost, no catch and no strings- just an opportunity for you to see how we can improve your website and leads. Increase organic traffic, boost your ranking and visibility.<br>Would it be okay to show you the suggestions I have in mind?<br>Please let me know!<br>Thank you!<br>Melissa Beavers</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9384a61d-1d71-4be2-820e-9d10d4e85a96",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:00.956Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-159352492098",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1be0334914341add22b180cb5ae17"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "6c32d398-c5c7-4e0c-add0-0341e8679a2e",
+      "conversationsThreadId": "9758942834",
+      "createdAt": "2025-09-29T06:56:00.955Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-159352492098",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "39a1be0334914341add22b180cb5ae17"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

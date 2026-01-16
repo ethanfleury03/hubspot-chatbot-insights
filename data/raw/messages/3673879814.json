@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "c017ab76-4383-4c2c-9a8d-52c8dad9eb74",
+      "conversationsThreadId": "3673879814",
+      "createdAt": "2022-12-15T15:33:33.167Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "974b85f0b7a94dc5af94afb8e3f4b584",
+      "conversationsThreadId": "3673879814",
+      "createdAt": "2022-12-15T15:33:32.324Z",
+      "updatedAt": "2022-12-15T15:33:32.324Z",
+      "createdBy": "V-405551",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-405551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "c45ee006352841fd9fbeece5eeeb58c9"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I was looking to see if I could help move some shipments for Arrow Systems. Do you ever outsource for transportation? I would love to help! ",
+      "richText": "<div>I was looking to see if I could help move some shipments for Arrow Systems. Do you ever outsource for transportation? I would love to help! </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "74eb73adf4134de59cb8312cbbc96dbf",
+      "conversationsThreadId": "3673879814",
+      "createdAt": "2022-12-15T15:33:32.322Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-405551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "c45ee006352841fd9fbeece5eeeb58c9"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

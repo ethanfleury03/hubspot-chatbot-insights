@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "acd8e588-b017-4d70-a05f-f465b8a02ba7",
+      "conversationsThreadId": "3451339101",
+      "createdAt": "2022-11-06T18:45:40.243Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "50ff8373dab048c5b6cf520b524d64d4",
+      "conversationsThreadId": "3451339101",
+      "createdAt": "2022-11-06T18:45:39.713Z",
+      "updatedAt": "2022-11-06T18:45:39.713Z",
+      "createdBy": "V-255551",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-255551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "dddc6f27eacf4551879cbf7df4842036"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Dime el precio de Anytron ",
+      "richText": "<div>Dime el precio de Anytron </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "da385ca378ef4499894452a7123e8c84",
+      "conversationsThreadId": "3451339101",
+      "createdAt": "2022-11-06T18:45:39.711Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-255551",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "dddc6f27eacf4551879cbf7df4842036"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

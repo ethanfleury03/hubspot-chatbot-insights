@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "a5a6145f-5bf1-4d9c-b029-a1d133c25d8c",
+      "conversationsThreadId": "3562432284",
+      "createdAt": "2022-11-25T17:29:14.776Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "e1d9b8e855e8418392b75a3ba1d5deb6",
+      "conversationsThreadId": "3562432284",
+      "createdAt": "2022-11-25T17:29:14.142Z",
+      "updatedAt": "2022-11-25T17:29:14.142Z",
+      "createdBy": "V-340101",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-340101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "41d215d473b6486994de5de79801a80a"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "What type of label is usually used on washer dryer drums for warnings",
+      "richText": "<div>What type of label is usually used on washer dryer drums for warnings</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b45b722012494314b8f68e106aa96f4f",
+      "conversationsThreadId": "3562432284",
+      "createdAt": "2022-11-25T17:29:14.140Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-340101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "41d215d473b6486994de5de79801a80a"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

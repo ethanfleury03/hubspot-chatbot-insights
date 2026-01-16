@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "9256b485-6668-4de1-80f8-1e5aa96ee0bd",
+      "conversationsThreadId": "3405559173",
+      "createdAt": "2022-10-28T10:59:46.146Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "6affa69e8c8b4775959260ff8c7391f2",
+      "conversationsThreadId": "3405559173",
+      "createdAt": "2022-10-28T10:59:45.870Z",
+      "updatedAt": "2022-10-28T10:59:45.870Z",
+      "createdBy": "V-251951",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-251951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "27da12a1ade34536950221e280377f61"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hello sir ",
+      "richText": "<div>Hello sir </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "3e997ee99c184865897464c6d0424ba5",
+      "conversationsThreadId": "3405559173",
+      "createdAt": "2022-10-28T10:59:45.868Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-251951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "27da12a1ade34536950221e280377f61"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

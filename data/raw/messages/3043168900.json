@@ -1,0 +1,147 @@
+{
+  "results": [
+    {
+      "id": "f22505e7-6c3a-48e5-910d-1d8e7d6c7761",
+      "conversationsThreadId": "3043168900",
+      "createdAt": "2022-08-18T07:05:46.278Z",
+      "createdBy": "A-2037205",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "5ad2861f-1ae3-4bf7-9d29-f5ae6cc287dc",
+      "conversationsThreadId": "3043168900",
+      "createdAt": "2022-08-18T07:05:44.028Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-2037205",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "6ad91aa7-c2ae-49f1-befe-817b53d0911a",
+      "conversationsThreadId": "3043168900",
+      "createdAt": "2022-08-18T07:05:43.927Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "26c157e7abb849579fb3f9ab456d140f",
+      "conversationsThreadId": "3043168900",
+      "createdAt": "2022-08-18T07:05:43.472Z",
+      "updatedAt": "2022-08-18T07:05:43.472Z",
+      "createdBy": "V-401",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "35c44ded312042afb71b052029219eda"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "tgfhdrt",
+      "richText": "<div>tgfhdrt</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850063",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "ff87e65e-6806-455f-95e1-2fd4ea68f075",
+      "conversationsThreadId": "3043168900",
+      "createdAt": "2022-08-18T07:05:43.470Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "35c44ded312042afb71b052029219eda"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Once your visitor opens the chat, they'll see this message. Start out with a greeting. For example: “Hi there. How can I help you today?”",
+      "channelId": "1000",
+      "channelAccountId": "80850063",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "809699f73f9a496ba9ce09ca28d7b702",
+      "conversationsThreadId": "3043168900",
+      "createdAt": "2022-08-18T07:05:43.469Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "35c44ded312042afb71b052029219eda"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "80850063",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

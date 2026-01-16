@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "f65183fa-bf3e-4f79-ab53-fa593188797d",
+      "conversationsThreadId": "3629130115",
+      "createdAt": "2022-12-07T17:31:10.670Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "350d4eb71b9446d495eaa3bf9f3aa1d3",
+      "conversationsThreadId": "3629130115",
+      "createdAt": "2022-12-07T17:31:10.091Z",
+      "updatedAt": "2022-12-07T17:31:10.091Z",
+      "createdBy": "V-381351",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-381351",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a505f8322b3f4344a93b44aa97238ba3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "hi just wondering what is the pricing for Arrow cut nova 330 R and laser one ",
+      "richText": "<div>hi just wondering what is the pricing for Arrow cut nova 330 R and laser one </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "4575625210de416986498a0b0cd80e02",
+      "conversationsThreadId": "3629130115",
+      "createdAt": "2022-12-07T17:31:10.089Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-381351",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a505f8322b3f4344a93b44aa97238ba3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "746221112a554b98bf3df59c15c81da3",
+      "conversationsThreadId": "3129553677",
+      "createdAt": "2022-09-06T06:32:19.783Z",
+      "updatedAt": "2022-09-06T06:32:19.783Z",
+      "createdBy": "V-61751",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-61751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "88e7d4581be5489292dded1722133f01"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I need ARROWJET AQUA 330R fr printing my hight chart",
+      "richText": "<div>I need ARROWJET AQUA 330R fr printing my hight chart</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "a1025387-50b6-4805-8599-201e9da77a9e",
+      "conversationsThreadId": "3129553677",
+      "createdAt": "2022-09-06T06:31:38.440Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "49619698fbf14062a28278c3fb53dbd1",
+      "conversationsThreadId": "3129553677",
+      "createdAt": "2022-09-06T06:31:38.169Z",
+      "updatedAt": "2022-09-06T06:31:38.169Z",
+      "createdBy": "V-61751",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-61751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "88e7d4581be5489292dded1722133f01"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "hi",
+      "richText": "<div>hi</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9c8f1faaa1a5425b88cddeaeb2bd6b01",
+      "conversationsThreadId": "3129553677",
+      "createdAt": "2022-09-06T06:31:38.167Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-61751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "88e7d4581be5489292dded1722133f01"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

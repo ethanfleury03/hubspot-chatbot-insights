@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "6d6676a1e1cc4cfcb75bb96e1ae304b5",
+      "conversationsThreadId": "3788389893",
+      "createdAt": "2023-01-10T01:27:18.830Z",
+      "updatedAt": "2023-01-10T01:27:18.830Z",
+      "createdBy": "V-480001",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-480001",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e338c65756364864b3d819d2c80c987d"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "quiero ayuda para saber como prender la maquina y funcione el estractor",
+      "richText": "<div>quiero ayuda para saber como prender la maquina y funcione el estractor</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "49418bea-8b1d-483b-9e5b-6e27459c6246",
+      "conversationsThreadId": "3788389893",
+      "createdAt": "2023-01-10T01:26:47.567Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "c082d8f628fa4676b1c2557f5c762767",
+      "conversationsThreadId": "3788389893",
+      "createdAt": "2023-01-10T01:26:47.116Z",
+      "updatedAt": "2023-01-10T01:26:47.116Z",
+      "createdBy": "V-480001",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-480001",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e338c65756364864b3d819d2c80c987d"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "HOLA ",
+      "richText": "<div>HOLA </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "686a8f31b9a34ccfae96fa97698e473e",
+      "conversationsThreadId": "3788389893",
+      "createdAt": "2023-01-10T01:26:47.114Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-480001",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e338c65756364864b3d819d2c80c987d"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "1aec9129-1b85-41e0-869a-84f8224c2d82",
+      "conversationsThreadId": "3508504728",
+      "createdAt": "2022-11-16T17:28:39.263Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "ba665ff102c64faf83c587db36be5784",
+      "conversationsThreadId": "3508504728",
+      "createdAt": "2022-11-16T17:28:38.668Z",
+      "updatedAt": "2022-11-16T17:28:38.668Z",
+      "createdBy": "V-301051",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-301051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "24eecfa91bc1489787df2caa4086b1a1"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Bonjour, je voudrai que vous me proposiez une imprimante qui imprime en cyan, magenta, jaune, noir + blanc, car le blanc est très important. Je voudrai avoir le prix de cette imprimante et le prix du litre d'encre.",
+      "richText": "<div>Bonjour, je voudrai que vous me proposiez une imprimante qui imprime en cyan, magenta, jaune, noir + blanc, car le blanc est très important. Je voudrai avoir le prix de cette imprimante et le prix du litre d&#x27;encre.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9cd0622c6e2b40ab8b5f80dbb86da622",
+      "conversationsThreadId": "3508504728",
+      "createdAt": "2022-11-16T17:28:38.666Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-301051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "24eecfa91bc1489787df2caa4086b1a1"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

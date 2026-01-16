@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "ae1b7313-83eb-4f7d-b6ee-bcc676d01677",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-03T18:25:25.577Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "7b7ca10c-86c3-488f-b57f-9f962a2ad823",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-02T17:50:15.080Z",
+      "updatedAt": "2025-07-02T17:50:15.080Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-134230236336",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e4c2c16fe2e941659adc15dfcb817e7b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "62351e32-ff7f-4140-8500-0867b52623df",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-02T17:50:14.436Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "1d429e8c-b73a-45d1-865c-8178b77208d3",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-02T17:50:14.399Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "9d3e8d9c7e57409c8d5edaa09bcacc65",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-02T17:50:13.030Z",
+      "updatedAt": "2025-07-02T17:50:13.030Z",
+      "createdBy": "V-134230236336",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-134230236336",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e4c2c16fe2e941659adc15dfcb817e7b"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hey there\nIf we managed to reach you, imagine what we could do for you.\nWe help businesses show up, stand out, and scale up online with:\n• Website Design, Development & Redesign\n• Website Maintenance & Speed Optimization\n• Social Media Management & Branded Post Design\n• SEO (Local, On-page, Off-page — the whole deal)\n• Paid Ads on Google, Facebook & Instagram\n• Ad Campaign Management & Optimization\n• Graphics & Marketing Collateral (banners, flyers, you name it)\nWhether you're launching, revamping, or tired of spinning your wheels — we’ll help turn your digital presence into a lead machine.\nLet’s connect for a quick intro call. You bring your goals, we’ll bring the plan.\nBest Regards,\nSophia Lee\nDigital Services Provider\nsophia@digitalservicesprovider.com\nPlease respond if you no longer wish to be contacted by me.",
+      "richText": "<div>Hey there<br>If we managed to reach you, imagine what we could do for you.<br>We help businesses show up, stand out, and scale up online with:<br>• Website Design, Development &amp; Redesign<br>• Website Maintenance &amp; Speed Optimization<br>• Social Media Management &amp; Branded Post Design<br>• SEO (Local, On-page, Off-page — the whole deal)<br>• Paid Ads on Google, Facebook &amp; Instagram<br>• Ad Campaign Management &amp; Optimization<br>• Graphics &amp; Marketing Collateral (banners, flyers, you name it)<br>Whether you&#x27;re launching, revamping, or tired of spinning your wheels — we’ll help turn your digital presence into a lead machine.<br>Let’s connect for a quick intro call. You bring your goals, we’ll bring the plan.<br>Best Regards,<br>Sophia Lee<br>Digital Services Provider<br><a href=\"mailto:sophia@digitalservicesprovider.com\" target=\"_blank\" rel=\"noopener noreferrer\">sophia@digitalservicesprovider.com</a><br>Please respond if you no longer wish to be contacted by me.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9a464eae-0957-4017-a897-5c0eed699394",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-02T17:50:13.028Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-134230236336",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e4c2c16fe2e941659adc15dfcb817e7b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "065629df-b096-442f-9723-62456dfbbe14",
+      "conversationsThreadId": "9362497042",
+      "createdAt": "2025-07-02T17:50:13.027Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-134230236336",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "e4c2c16fe2e941659adc15dfcb817e7b"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

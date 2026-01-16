@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "77d720d6-caf3-4b18-9f0e-8a0839071eb7",
+      "conversationsThreadId": "4013485215",
+      "createdAt": "2023-02-16T05:52:43.114Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "b2c8707cfc2b490dbcde89f28fe2fce8",
+      "conversationsThreadId": "4013485215",
+      "createdAt": "2023-02-16T05:52:42.407Z",
+      "updatedAt": "2023-02-16T05:52:42.407Z",
+      "createdBy": "V-626201",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-626201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "9099c37cde8e45e9bbac792b95c14abb"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I am trying to find out which fume extractor would be the best for my omtech 80 watt laser in a classrom.  Thank you for any information. ",
+      "richText": "<div>I am trying to find out which fume extractor would be the best for my omtech 80 watt laser in a classrom.  Thank you for any information. </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "acfb09f50ad54472862962ef6a1d861b",
+      "conversationsThreadId": "4013485215",
+      "createdAt": "2023-02-16T05:52:42.405Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-626201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "9099c37cde8e45e9bbac792b95c14abb"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

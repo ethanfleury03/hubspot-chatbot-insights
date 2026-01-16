@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "232379ec0bee4895b5c4d9ab1ab8ff35",
+      "conversationsThreadId": "3944895153",
+      "createdAt": "2023-02-05T06:35:25.159Z",
+      "updatedAt": "2023-02-05T06:35:25.159Z",
+      "createdBy": "V-584851",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-584851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "ec39ba13748a4938adee336d8f0ea58a"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Please email me more information",
+      "richText": "<div>Please email me more information</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "504ae658-a800-4f3c-a25a-da9756377afd",
+      "conversationsThreadId": "3944895153",
+      "createdAt": "2023-02-05T06:35:19.846Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "649e4ed188a94a9e814b3af8896202b2",
+      "conversationsThreadId": "3944895153",
+      "createdAt": "2023-02-05T06:35:19.523Z",
+      "updatedAt": "2023-02-05T06:35:19.523Z",
+      "createdBy": "V-584851",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-584851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "ec39ba13748a4938adee336d8f0ea58a"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hey there I would like to inquire about getting pouching making equipment. we print cannabis mylar bags and currently use memjet technology. I was interested in getting a full solution for short run mylar bags square or custom shape with a zipper. ",
+      "richText": "<div>Hey there I would like to inquire about getting pouching making equipment. we print cannabis mylar bags and currently use memjet technology. I was interested in getting a full solution for short run mylar bags square or custom shape with a zipper. </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "a809fa2f53fa49adb2091a4f88bad603",
+      "conversationsThreadId": "3944895153",
+      "createdAt": "2023-02-05T06:35:19.521Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-584851",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "ec39ba13748a4938adee336d8f0ea58a"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

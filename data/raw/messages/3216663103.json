@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "65fddbec-a7d9-4c79-be91-a93bd53d5695",
+      "conversationsThreadId": "3216663103",
+      "createdAt": "2022-09-23T07:40:46.489Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "a73c79c4bcfd49ac8a5049406d9fe387",
+      "conversationsThreadId": "3216663103",
+      "createdAt": "2022-09-23T07:40:45.887Z",
+      "updatedAt": "2022-09-23T07:40:45.887Z",
+      "createdBy": "V-131451",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-131451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f5de72de6ac740938e562b6c05dffe02"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hey\nWe are interested to increase organic traffic to your website, please get back to us in order to discuss the possibility in further detail. Please mention your phone number and suitable time to talk.\nRegards\nEileen Rosen",
+      "richText": "<div>Hey\nWe are interested to increase organic traffic to your website, please get back to us in order to discuss the possibility in further detail. Please mention your phone number and suitable time to talk.\nRegards\nEileen Rosen</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "612e7e6872d44b579ffbdfa7921c8d85",
+      "conversationsThreadId": "3216663103",
+      "createdAt": "2022-09-23T07:40:45.885Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-131451",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f5de72de6ac740938e562b6c05dffe02"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

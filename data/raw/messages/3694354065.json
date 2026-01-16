@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "dc253167-bd06-4d55-86e9-95d3fe5708e3",
+      "conversationsThreadId": "3694354065",
+      "createdAt": "2022-12-20T04:59:40.722Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "42619a2cc9424502be3aee944f7ca71f",
+      "conversationsThreadId": "3694354065",
+      "createdAt": "2022-12-20T04:59:40.082Z",
+      "updatedAt": "2022-12-20T04:59:40.082Z",
+      "createdBy": "V-418151",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-418151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6d15875034034a1b83db0c1a14a71dcd"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "hi. i am from Uganda Kampala  a user of Gerber Edge FX printer. My printer has developed a FATAL ERROR number 14. what can i do?",
+      "richText": "<div>hi. i am from Uganda Kampala  a user of Gerber Edge FX printer. My printer has developed a FATAL ERROR number 14. what can i do?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "37829a2872994dddbb5b2061a013664c",
+      "conversationsThreadId": "3694354065",
+      "createdAt": "2022-12-20T04:59:40.080Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-418151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6d15875034034a1b83db0c1a14a71dcd"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "86d5c290-4060-41f4-aee7-2adb66c6525c",
+      "conversationsThreadId": "4033955172",
+      "createdAt": "2023-02-20T10:24:33.995Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "41289b111b124c82a2ace26ffa714458",
+      "conversationsThreadId": "4033955172",
+      "createdAt": "2023-02-20T10:24:33.612Z",
+      "updatedAt": "2023-02-20T10:24:33.612Z",
+      "createdBy": "V-640351",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-640351",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "0ffbc3fda41a431aa6d9956f08015589"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "we are a company located in Agadir in Agadir and Casablanca Morocco. Interested in a label press digital label printer. Can you send me info and prices for your products at ziani@digitalimage.ma . You can also contact at my US number 305 846 3395",
+      "richText": "<div>we are a company located in Agadir in Agadir and Casablanca Morocco. Interested in a label press digital label printer. Can you send me info and prices for your products at <a href=\"mailto:ziani@digitalimage.ma\" target=\"_blank\" rel=\"noopener noreferrer\">ziani@digitalimage.ma</a> . You can also contact at my US number <a href=\"tel:3058463395\" target=\"_blank\" rel=\"noopener noreferrer\">305 846 3395</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "6de7c341e9934048b4802193dd62d35d",
+      "conversationsThreadId": "4033955172",
+      "createdAt": "2023-02-20T10:24:33.610Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-640351",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "0ffbc3fda41a431aa6d9956f08015589"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

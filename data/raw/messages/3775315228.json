@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "f5926758-5897-4015-a557-daec4bb96049",
+      "conversationsThreadId": "3775315228",
+      "createdAt": "2023-01-06T21:05:06.056Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "35f009c2ff65405e87967d0a6fbf9536",
+      "conversationsThreadId": "3775315228",
+      "createdAt": "2023-01-06T21:05:05.208Z",
+      "updatedAt": "2023-01-06T21:05:05.208Z",
+      "createdBy": "V-470401",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-470401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "aec62b890ea34155a59a689f2888bdb8"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi. I've received a job referral for Bookkeeper/Office Manager.  Do you have an e-mail address that I can send a resume to?",
+      "richText": "<div>Hi. I&#x27;ve received a job referral for Bookkeeper/Office Manager.  Do you have an e-mail address that I can send a resume to?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "725a7ac0a2fb46a09226b5cbe5694ece",
+      "conversationsThreadId": "3775315228",
+      "createdAt": "2023-01-06T21:05:05.206Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-470401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "aec62b890ea34155a59a689f2888bdb8"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

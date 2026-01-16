@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "c3aa6930-9e75-4586-ab49-c3b73bd723b5",
+      "conversationsThreadId": "4041046539",
+      "createdAt": "2023-02-21T14:18:19.782Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "7bd902bc74c54f29aee53bdeaecdc1f1",
+      "conversationsThreadId": "4041046539",
+      "createdAt": "2023-02-21T14:18:19.438Z",
+      "updatedAt": "2023-02-21T14:18:19.438Z",
+      "createdBy": "V-644951",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-644951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "58bbc2e23f1c4973ae6178afb95b4d7f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "How much is. The arrow jet 330",
+      "richText": "<div>How much is. The arrow jet 330</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "73272d4f39ea442a8514003546e19095",
+      "conversationsThreadId": "4041046539",
+      "createdAt": "2023-02-21T14:18:19.436Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-644951",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "58bbc2e23f1c4973ae6178afb95b4d7f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

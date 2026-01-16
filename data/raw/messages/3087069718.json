@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "a207e42fffdc4ba8b98b3f21605478c2",
+      "conversationsThreadId": "3087069718",
+      "createdAt": "2022-08-27T13:12:57.062Z",
+      "updatedAt": "2022-08-27T13:12:57.062Z",
+      "createdBy": "V-26751",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-26751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "bb8f1c7ea873456c8105d309f3ddb374"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I’m looking for printing machine",
+      "richText": "<div>I’m looking for printing machine</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "6e7f254f-5f51-46a6-8107-fdf3acfb278a",
+      "conversationsThreadId": "3087069718",
+      "createdAt": "2022-08-27T13:12:18.728Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "8aa2d47e0db845569be5a37bb2a46b0b",
+      "conversationsThreadId": "3087069718",
+      "createdAt": "2022-08-27T13:12:18.175Z",
+      "updatedAt": "2022-08-27T13:12:18.175Z",
+      "createdBy": "V-26751",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-26751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "bb8f1c7ea873456c8105d309f3ddb374"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi",
+      "richText": "<div>Hi</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "f667dd944bb44fffb06e8afcd39e0227",
+      "conversationsThreadId": "3087069718",
+      "createdAt": "2022-08-27T13:12:18.173Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-26751",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "bb8f1c7ea873456c8105d309f3ddb374"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

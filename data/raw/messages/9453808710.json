@@ -1,0 +1,392 @@
+{
+  "results": [
+    {
+      "id": "fcd4364b-7f9b-4329-9991-8c3e5d1f9f81",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-23T02:12:06.608Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "55847db5-b00b-4dfd-bc05-f2df8169d501",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:02:12.754Z",
+      "updatedAt": "2025-07-22T02:02:12.754Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your good contact number to contact you with?",
+      "richText": "<div>What is your good contact number to contact you with?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "c67a6ba7886f46fea04e2c6d85423922",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:02:10.430Z",
+      "updatedAt": "2025-07-22T02:02:10.485Z",
+      "createdBy": "V-140049651829",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "USA, Clarkston Ga, 30021",
+      "richText": "<div>USA, Clarkston Ga, 30021</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "005bea4a-2b4a-4001-9446-a634fd1b73e3",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:01:50.117Z",
+      "updatedAt": "2025-07-22T02:01:50.117Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your country/ region?",
+      "richText": "<div>What is your country/ region?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "1edc6921a87e46e4a3a044634d90f7b6",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:01:48.616Z",
+      "updatedAt": "2025-07-22T02:01:48.676Z",
+      "createdBy": "V-140049651829",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "kthomson@becompostable.com",
+      "richText": "<div><a href=\"mailto:kthomson@becompostable.com\" target=\"_blank\" rel=\"noopener noreferrer\">kthomson@becompostable.com</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b41d51b7-e795-4d60-a31d-4424480d2063",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:01:21.023Z",
+      "updatedAt": "2025-07-22T02:01:21.023Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is a good email address to contact you with?",
+      "richText": "<div>What is a good email address to contact you with?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "d0416125ee0945efbe17f4a422d3ac8c",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:01:18.631Z",
+      "updatedAt": "2025-07-22T02:01:18.749Z",
+      "createdBy": "V-140049651829",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Kenneth Thomson, Plant Engineer, Better Earth, LLC, Clarkston GA, 30021 404-465-9596",
+      "richText": "<div>Kenneth Thomson, Plant Engineer, Better Earth, LLC, Clarkston GA, 30021 404-465-9596</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "d289f66b-9a77-4da9-a622-89d0a3b8e84c",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:00:04.259Z",
+      "updatedAt": "2025-07-22T02:00:04.259Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "4ef21b45-99f1-4926-ba2e-820e4ed1fb3c",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:00:03.690Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "f0e7cbfa-3eda-4a09-a045-653fe08c82b9",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:00:03.589Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "eee1673a4a844055827a6685a8283697",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:00:03.076Z",
+      "updatedAt": "2025-07-22T02:00:03.076Z",
+      "createdBy": "V-140049651829",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I was interested in your Overjet Pro printing system. We are currently using a 4 color, 8 head ink jet printer from INX to print our containers, but this printer is getting pretty old, and somewhat unreliable. We are looking for a replacement that will handle our containers. We furnish ToGo containers for restaurants, but we can print a logo or other information on the containers. We have customers all over the US, and are looking at many new ones which may require a second print line, and maybe an upgrade to our printer. The one thing I needed to check on is, do you have a UV curable ink available for the printer? I think 150 fpm would probably be sufficient,, but is that the max available? Can I get a price for this printer and the availability?",
+      "richText": "<div>I was interested in your Overjet Pro printing system. We are currently using a 4 color, 8 head ink jet printer from INX to print our containers, but this printer is getting pretty old, and somewhat unreliable. We are looking for a replacement that will handle our containers. We furnish ToGo containers for restaurants, but we can print a logo or other information on the containers. We have customers all over the US, and are looking at many new ones which may require a second print line, and maybe an upgrade to our printer. The one thing I needed to check on is, do you have a UV curable ink available for the printer? I think 150 fpm would probably be sufficient,, but is that the max available? Can I get a price for this printer and the availability?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "e78abf35-64e6-461d-a31d-79249c9128eb",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:00:03.074Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "8e4140c8-ab8b-4d33-bbc6-49c9097284fc",
+      "conversationsThreadId": "9453808710",
+      "createdAt": "2025-07-22T02:00:03.073Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-140049651829",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "f2202340ab514d5a96fa6d1827856537"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

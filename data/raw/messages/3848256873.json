@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "691c4c1554854c7397d64749b9cb0531",
+      "conversationsThreadId": "3848256873",
+      "createdAt": "2023-01-19T15:25:26.660Z",
+      "updatedAt": "2023-01-19T15:25:26.660Z",
+      "createdBy": "V-508051",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-508051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "db1b452a858b4864ba9046ae023ad23c"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Can someone quote me the prices for arrow overjet Pro 700 and Arrow overjet. Also have few questions about these products.\n",
+      "richText": "<div>Can someone quote me the prices for arrow overjet Pro 700 and Arrow overjet. Also have few questions about these products.\n</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "bb7f6cce-de20-4326-8dab-4daab30303bd",
+      "conversationsThreadId": "3848256873",
+      "createdAt": "2023-01-19T15:23:46.704Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "6e0c5066fb454e45ac67537b22d55abf",
+      "conversationsThreadId": "3848256873",
+      "createdAt": "2023-01-19T15:23:45.922Z",
+      "updatedAt": "2023-01-19T15:23:45.922Z",
+      "createdBy": "V-508051",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-508051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "db1b452a858b4864ba9046ae023ad23c"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi,",
+      "richText": "<div>Hi,</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "8aef8cf8990e44139480d5fdda77b341",
+      "conversationsThreadId": "3848256873",
+      "createdAt": "2023-01-19T15:23:45.920Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-508051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "db1b452a858b4864ba9046ae023ad23c"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

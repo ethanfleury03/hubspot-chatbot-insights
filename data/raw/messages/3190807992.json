@@ -1,0 +1,1165 @@
+{
+  "results": [
+    {
+      "id": "9a7fcd54b1af4177b082e0f02f1acfaf",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:36:53.678Z",
+      "updatedAt": "2022-09-19T06:36:53.678Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "from US",
+      "richText": "<div style=\"text-align: left\">from US</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "fc7a1f3328f24bfc98c667fe4a883bc1",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:36:46.209Z",
+      "updatedAt": "2022-09-19T06:36:46.209Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Let me check my team will provide you the offer.",
+      "richText": "<div style=\"text-align: left\">Let me check my team will provide you the offer. </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "1efcacda4af84a1d820e3189c26bc4df",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:33:58.907Z",
+      "updatedAt": "2022-09-19T06:33:58.907Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Ok, I can still discuss the proposal to him. If you can also include logistics",
+      "richText": "<div>Ok, I can still discuss the proposal to him. If you can also include logistics</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "52a2ffba280b4d2db73f59ba69646f2b",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:33:10.749Z",
+      "updatedAt": "2022-09-19T06:33:10.749Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "2440 Jerauld Ave, Niagara Falls, NY 14305, United States",
+      "richText": "<div style=\"text-align: left\">2440 Jerauld Ave, Niagara Falls, NY 14305, United States</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "44883d21b96c4c45b299c149ba98a7cb",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:32:49.779Z",
+      "updatedAt": "2022-09-19T06:32:49.779Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Our office is in US",
+      "richText": "<div style=\"text-align: left\">Our office is in US </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "fdd87dc840b0445cb54f330bcbdded34",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:31:03.642Z",
+      "updatedAt": "2022-09-19T06:31:03.642Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "You are in NZ, right?",
+      "richText": "<div>You are in NZ, right?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "656ec6988b8a47348aa2144e33dd6f55",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:30:55.322Z",
+      "updatedAt": "2022-09-19T06:30:55.322Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "He didn't mention how much production. Just said large quantities each day. So maybe just send me a proposal with different machines.",
+      "richText": "<div>He didn&#x27;t mention how much production. Just said large quantities each day. So maybe just send me a proposal with different machines.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b50bcd515f8d4579b3a5df07422c932a",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:30:13.732Z",
+      "updatedAt": "2022-09-19T06:30:13.732Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "yes i understand how much production he is targeting so accordingly if we want to suggest any other model we can do it accordingly",
+      "richText": "<div style=\"text-align: left\">yes i understand how much production he is targeting so accordingly if we want to suggest any other model we can do it accordingly </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "28e6b793be424b558e747fed5a12dc3a",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:30:07.822Z",
+      "updatedAt": "2022-09-19T06:30:07.822Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "The business that I know of him is online course. I'm new with him so not sure where to use this machine for.",
+      "richText": "<div>The business that I know of him is online course. I&#x27;m new with him so not sure where to use this machine for.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "7df9270746b64bcf8ed6bf5ec6f43389",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:29:26.362Z",
+      "updatedAt": "2022-09-19T06:29:26.362Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I think he used a smaller cricut machine before which can only produce small quantities. He wants something bigger as I mentioned above",
+      "richText": "<div>I think he used a smaller cricut machine before which can only produce small quantities. He wants something bigger as I mentioned above</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "18b86b5ab1da4d58abc00fa912fdeed6",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:29:19.094Z",
+      "updatedAt": "2022-09-19T06:29:19.094Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Your Client is printing on which media and working for which industry",
+      "richText": "<div style=\"text-align: left\">Your Client is printing on which media and working for which industry </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "7036f0555db3440c82769470d9cb9bf0",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:28:48.512Z",
+      "updatedAt": "2022-09-19T06:28:48.512Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Ok no problem",
+      "richText": "<div style=\"text-align: left\">Ok no problem </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "4cab45034ff742b99ee1517f1ef90f81",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:28:34.008Z",
+      "updatedAt": "2022-09-19T06:28:34.008Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I'm only communicating thru email",
+      "richText": "<div>I&#x27;m only communicating thru email</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "26b12b37ae234baab08163ee69f2e161",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:28:26.877Z",
+      "updatedAt": "2022-09-19T06:28:26.877Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Your client is using any printing technology ?",
+      "richText": "<div style=\"text-align: left\">Your client is using any printing technology ?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "f5d2a7d3395b400182f5e4af03862565",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:28:15.741Z",
+      "updatedAt": "2022-09-19T06:28:15.741Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Ok no problem i will share the details meanwhile I need your number for further communication",
+      "richText": "<div style=\"text-align: left\">Ok no problem i will share the details meanwhile I need your number for further communication </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "a90e36ccad75438cb17356e87212e4a7",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:28:00.512Z",
+      "updatedAt": "2022-09-19T06:28:00.512Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "My client says he is looking for something like ARROWJET NOVA 250R- INLINE DIGITAL PRINTER AND LASER DIE-CUTTER\n\n",
+      "richText": "<div>My client says he is looking for something like ARROWJET NOVA 250R- INLINE DIGITAL PRINTER AND LASER DIE-CUTTER\n\n</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "c4b1ac970db14dd39d622cab077ca38f",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:27:42.605Z",
+      "updatedAt": "2022-09-19T06:27:42.605Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Only For printing, Print & Cut, Priner with inline lamination) Printers with Inline lamination and Varnish",
+      "richText": "<div style=\"text-align: left\">Only For printing, Print &amp; Cut, Priner with inline lamination) Printers with Inline lamination and Varnish </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "8425c26eabb9412f8106e0f940aae208",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:27:11.392Z",
+      "updatedAt": "2022-09-19T06:27:11.392Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "if you can send options, features, price and materials needed that can be purchased locally that would be great.",
+      "richText": "<div>if you can send options, features, price and materials needed that can be purchased locally that would be great.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "1bc26e05dbc24edb909957ec63084d28",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:27:05.104Z",
+      "updatedAt": "2022-09-19T06:27:05.104Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Ok so we are having different model with difference in working Technologies",
+      "richText": "<div style=\"text-align: left\">Ok so we are having different model with difference in working Technologies </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "e61fc3fa08fd4ad3a26913ad26cee141",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:26:28.968Z",
+      "updatedAt": "2022-09-19T06:26:28.968Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "For my client",
+      "richText": "<div>For my client</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "902caa42b84c41df98da60f42b178337",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:26:20.063Z",
+      "updatedAt": "2022-09-19T06:26:20.063Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "So this technology you want for your client or for your manufacturing ?",
+      "richText": "<div style=\"text-align: left\">So this technology you want for your client or for your manufacturing ?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "ecee3ff4e51245d280395157a580c2ed",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:26:07.722Z",
+      "updatedAt": "2022-09-19T06:26:07.722Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "So you if you'll send a quote address to Bai B.",
+      "richText": "<div>So you if you&#x27;ll send a quote address to Bai B.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "45ea3ddce8e543f98b0c7e3288a200ee",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:26:01.806Z",
+      "updatedAt": "2022-09-19T06:26:01.806Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Ok Thats great to know",
+      "richText": "<div style=\"text-align: left\">Ok Thats great to know </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "21744e31484e4ca48684b11a69f288c4",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:25:45.431Z",
+      "updatedAt": "2022-09-19T06:25:45.431Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I'm working for a client in NZ. ",
+      "richText": "<div>I&#x27;m working for a client in NZ. </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "e92690ef308841119ad025999ee80841",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:25:26.510Z",
+      "updatedAt": "2022-09-19T06:25:26.510Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "With Water based pigment ink and Memjet duraflex technology for short and medium runs",
+      "richText": "<div style=\"text-align: left\">With Water based pigment ink and Memjet duraflex technology for short and medium runs </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "f9368659705a4ef38969bf38c8cec685",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:24:51.543Z",
+      "updatedAt": "2022-09-19T06:24:51.543Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "We are the manufacturer of Digital label Printing Technologies",
+      "richText": "<div style=\"text-align: left\">We are the manufacturer of Digital label Printing Technologies </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "bf306dc691cc484ea359116e938b7efd",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:24:37.184Z",
+      "updatedAt": "2022-09-19T06:24:37.184Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Also i need your company name",
+      "richText": "<div style=\"text-align: left\">Also i need your company name </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "029d503dbb6e405e8c8d275908792e94",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:24:23.861Z",
+      "updatedAt": "2022-09-19T06:24:23.861Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "tender_sb@yahoo.com",
+      "richText": "<div><a href=\"mailto:tender_sb@yahoo.com\" target=\"_blank\" rel=\"noopener noreferrer\">tender_sb@yahoo.com</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "2760d272d74943b3969da0ec0fb39094",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:24:09.832Z",
+      "updatedAt": "2022-09-19T06:24:09.832Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Can you share me your contact details and mail -id for further communication",
+      "richText": "<div style=\"text-align: left\">Can you share me your contact details and mail -id for further communication </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "d2fb46cbbf6d4b67b36b411d4325647a",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:23:06.605Z",
+      "updatedAt": "2022-09-19T06:23:06.605Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I'd like to purchase or lease a commercial or industrial machine.\nI want a machine that can:\nDo large quantities each day\nCan print and cut out stickers\nThe designs will have intricate patterns, so these need to be automatically cut out.\nI'm wanting to minimise as much as possible manual labour.\nAlso, it'll be good if materials are purchased locally.\n\n",
+      "richText": "<div>I&#x27;d like to purchase or lease a commercial or industrial machine.\nI want a machine that can:\nDo large quantities each day\nCan print and cut out stickers\nThe designs will have intricate patterns, so these need to be automatically cut out.\nI&#x27;m wanting to minimise as much as possible manual labour.\nAlso, it&#x27;ll be good if materials are purchased locally.\n\n</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "9125f531-8d6a-481b-be18-2842a6b04f8f",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:21:08.105Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "A-46516809",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "e7f4343c50bb4dd2b75c54e1572abbe6",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:21:07.779Z",
+      "updatedAt": "2022-09-19T06:21:07.779Z",
+      "createdBy": "A-46516809",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "A-46516809"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Yes",
+      "richText": "<div style=\"text-align: left\">Yes</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b1d3eb12-0ddd-4317-92e1-b95231271b89",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:19:57.884Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "4412a195e42f4b579ac467d102c08818",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:19:57.715Z",
+      "updatedAt": "2022-09-19T06:19:57.715Z",
+      "createdBy": "V-113201",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Do you have in New Zealand?",
+      "richText": "<div>Do you have in New Zealand?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "6884e56525434cea80e75e2f79128d11",
+      "conversationsThreadId": "3190807992",
+      "createdAt": "2022-09-19T06:19:57.713Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-113201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "3d8ddaa7cdca45d98585ff6f3b9848d3"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

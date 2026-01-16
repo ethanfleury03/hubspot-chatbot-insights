@@ -1,0 +1,118 @@
+{
+  "results": [
+    {
+      "id": "1c8b2cc5-4695-4260-ac03-b6c9900a60c6",
+      "conversationsThreadId": "3043180714",
+      "createdAt": "2022-08-18T06:28:00.387Z",
+      "createdBy": "A-2037100",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "ec3e7c0f-a623-4374-8205-3e536f014695",
+      "conversationsThreadId": "3043180714",
+      "createdAt": "2022-08-18T06:27:58.096Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-2037100",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "0ef15266-5b27-4f4f-a515-addfc8b2d815",
+      "conversationsThreadId": "3043180714",
+      "createdAt": "2022-08-18T06:27:58.083Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "cmf-22534293-7639105",
+      "conversationsThreadId": "3043180714",
+      "createdAt": "2022-08-18T06:27:57.701Z",
+      "updatedAt": "2022-08-18T06:27:57.471Z",
+      "createdBy": "V-1",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-1",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "TOMBSTONE-3043180714"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "You connected chat to your inbox.\nFrom now on, any chats on your website will appear here. Choose what you'd like to do next:\n\nTry it out \nSend a test chat from any page where the tracking code is installed: https://app.hubspot.com/live-messages-settings/22534293/inboxes/147959634/live-chat/edit/tracking?utm_tracking=chat_test_message_tracking\n\nManage your chatflow \nManage your chat messaging and automation. Go to chatflow: https://app.hubspot.com/chatflows/22534293/edit/live-chat/7185125/build?utm_tracking=chat_test_message_chatflow\n\nCustomize your chat widget \nCustomize the color and style of your chat widget. Go to settings: https://app.hubspot.com/live-messages-settings/22534293/inboxes/147959634/live-chat/edit?utm_tracking=chat_test_message_widget\n\nManage your team \nManage team member access and availability. Go to settings: https://app.hubspot.com/live-messages-settings/22534293/team-management?utm_tracking=chat_test_message_team\n\nRespond on the go with the HubSpot mobile app \nDownload the app. Or learn more about conversations on mobile.",
+      "richText": "<b>You connected chat to your inbox.</b> &#x1f389;<br>From now on, any chats on your website will appear here. Choose what you'd like to do next:<br><br><b>Try it out</b><br>Send a test chat from any page where the tracking code is installed. <a href = 'https://app.hubspot.com/live-messages-settings/22534293/inboxes/147959634/live-chat/edit/tracking?utm_tracking=chat_test_message_tracking' target = '_blank'>Get tracking code</a><br><br><b>Manage your chatflow</b><br>Manage your chat messaging and automation. <a href = 'https://app.hubspot.com/chatflows/22534293/edit/live-chat/7185125/build?utm_tracking=chat_test_message_chatflow' target = '_blank'>Go to chatflow</a><br><br><b>Customize your chat widget</b><br>Customize the color and style of your chat widget. <a href = 'https://app.hubspot.com/live-messages-settings/22534293/inboxes/147959634/live-chat/edit?utm_tracking=chat_test_message_widget' target='_blank'>Go to settings</a><br><br><b>Manage your team</b><br>Manage team member access and availability. <a href = 'https://app.hubspot.com/live-messages-settings/22534293/team-management?utm_tracking=chat_test_message_team' target='_blank'>Go to settings</a><br><br><b>Respond on the go with the HubSpot mobile app</b><br><a href = 'https://www.hubspot.com/products/mobile' target='_blank'>Download the app.</a> Or learn more about <a href = 'https://knowledge.hubspot.com/inbox/use-conversations-on-the-hubspot-mobile-app' target='_blank'>conversations on mobile.</a>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80844757",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "initial-22534293-7639105",
+      "conversationsThreadId": "3043180714",
+      "createdAt": "2022-08-18T06:27:57.699Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-1",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "expired:;:22534293:;:3043180714:;:initial-22534293-7639105"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "80844757",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

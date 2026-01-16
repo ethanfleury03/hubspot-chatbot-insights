@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "11299e9b-967b-4973-b55b-ae77bc52fed8",
+      "conversationsThreadId": "3297715550",
+      "createdAt": "2022-10-09T11:49:25.696Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "a02e0f4cd881406d8f355e4849bd18fc",
+      "conversationsThreadId": "3297715550",
+      "createdAt": "2022-10-09T11:49:25.133Z",
+      "updatedAt": "2022-10-09T11:49:25.133Z",
+      "createdBy": "V-184151",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-184151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "da3f24e825ae4b4593108ddee5a54565"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Can single-pass achieve a matte finish?",
+      "richText": "<div>Can single-pass achieve a matte finish?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "27da57c6fa6c4c45a9adecf1b8213440",
+      "conversationsThreadId": "3297715550",
+      "createdAt": "2022-10-09T11:49:25.131Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-184151",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "da3f24e825ae4b4593108ddee5a54565"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

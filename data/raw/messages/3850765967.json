@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "28ab45fb-2e2b-4e3f-afeb-0fb857ccef84",
+      "conversationsThreadId": "3850765967",
+      "createdAt": "2023-01-19T20:53:52.596Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "d0da9b754979461c9f684dd5606e5ac8",
+      "conversationsThreadId": "3850765967",
+      "createdAt": "2023-01-19T20:53:52.099Z",
+      "updatedAt": "2023-01-19T20:53:52.099Z",
+      "createdBy": "V-521601",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-521601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a3a2c65b488740ceb1238a2662c667c8"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "By the way, we are a company that produces labels in Turkey.\n\n\nCould you give some information about the machine's features (life of the laser, cost of paint per 1 m2? and does it print on all materials?)?\n\n\nThank you for informing in advance.",
+      "richText": "<div>By the way, we are a company that produces labels in Turkey.\n\n\nCould you give some information about the machine&#x27;s features (life of the laser, cost of paint per 1 m2? and does it print on all materials?)?\n\n\nThank you for informing in advance.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "5c1fe397ec944cd4ac6baa74a85f4f66",
+      "conversationsThreadId": "3850765967",
+      "createdAt": "2023-01-19T20:53:52.097Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-521601",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "a3a2c65b488740ceb1238a2662c667c8"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

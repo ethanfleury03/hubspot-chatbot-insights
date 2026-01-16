@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "eed65d9f400246b9be3fc6f6d57566d6",
+      "conversationsThreadId": "3945198661",
+      "createdAt": "2023-02-05T10:53:10.694Z",
+      "updatedAt": "2023-02-05T10:53:10.694Z",
+      "createdBy": "V-585101",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-585101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6fb868d0fefa459cb987287845f7eb10"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I need to get connected to a sales person who can suggest the best solution",
+      "richText": "<div>I need to get connected to a sales person who can suggest the best solution</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "32bf380e-4c54-415c-87b5-fad747ebb2d5",
+      "conversationsThreadId": "3945198661",
+      "createdAt": "2023-02-05T10:52:47.713Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "c493186caf284d50afa59b682d695eee",
+      "conversationsThreadId": "3945198661",
+      "createdAt": "2023-02-05T10:52:47.405Z",
+      "updatedAt": "2023-02-05T10:52:47.405Z",
+      "createdBy": "V-585101",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-585101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6fb868d0fefa459cb987287845f7eb10"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi",
+      "richText": "<div>Hi</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "dfc94cdb1fbf488eb3da690fd2b7df4a",
+      "conversationsThreadId": "3945198661",
+      "createdAt": "2023-02-05T10:52:47.403Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-585101",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "6fb868d0fefa459cb987287845f7eb10"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

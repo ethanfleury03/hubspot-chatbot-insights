@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "9737ddb6-4fd7-4650-9a6f-fc232a9bc084",
+      "conversationsThreadId": "3108698882",
+      "createdAt": "2022-09-01T03:04:21.561Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "d9d492df6ce44d4e980080eaf113737a",
+      "conversationsThreadId": "3108698882",
+      "createdAt": "2022-09-01T03:04:21.125Z",
+      "updatedAt": "2022-09-01T03:04:21.125Z",
+      "createdBy": "V-43201",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-43201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "ab5c800e49094f8b9bdb269b7c0feb8f"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I’m looking for a Mylar bag printer ",
+      "richText": "<div>I’m looking for a Mylar bag printer </div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b8ce45af0fd947d6ae801931842d8b63",
+      "conversationsThreadId": "3108698882",
+      "createdAt": "2022-09-01T03:04:21.123Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-43201",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "ab5c800e49094f8b9bdb269b7c0feb8f"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

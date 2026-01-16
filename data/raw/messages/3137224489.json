@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "baa90c0c-6104-4785-a211-149f8546cb27",
+      "conversationsThreadId": "3137224489",
+      "createdAt": "2022-09-07T14:35:01.526Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "d35606bbaee84fb4ba16bacab1647612",
+      "conversationsThreadId": "3137224489",
+      "createdAt": "2022-09-07T14:35:00.955Z",
+      "updatedAt": "2022-09-07T14:35:00.955Z",
+      "createdBy": "V-68051",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-68051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "4ab24b82cc0b4bc894343c5c90d5ea80"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Hi.\nWe are planning to start new label printing business in Canada. Currently we are doing research for possible Printing Technology, Mis Software, Workflow Software etc. We would like to Know more about your Product Offerings in the Label Industry. We are also going to visit Label Expo in Chicago. If you have Presence there we can have live demo of your products there as well.\nThanks\nYogeshkumar Patel\nMBA,BE-Printing Tech,Dip-Printing Tech.\n+16478641054",
+      "richText": "<div>Hi.\nWe are planning to start new label printing business in Canada. Currently we are doing research for possible Printing Technology, Mis Software, Workflow Software etc. We would like to Know more about your Product Offerings in the Label Industry. We are also going to visit Label Expo in Chicago. If you have Presence there we can have live demo of your products there as well.\nThanks\nYogeshkumar Patel\nMBA,BE-Printing Tech,Dip-Printing Tech.\n<a href=\"tel:+16478641054\" target=\"_blank\" rel=\"noopener noreferrer\">+16478641054</a></div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "27d980fac37d499591ea07b85bd53e44",
+      "conversationsThreadId": "3137224489",
+      "createdAt": "2022-09-07T14:35:00.953Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-68051",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "4ab24b82cc0b4bc894343c5c90d5ea80"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

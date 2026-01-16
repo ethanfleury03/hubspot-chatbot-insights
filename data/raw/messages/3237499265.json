@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "id": "d1e58f639842429dbb9aec57301b00b7",
+      "conversationsThreadId": "3237499265",
+      "createdAt": "2022-09-27T20:27:27.491Z",
+      "updatedAt": "2022-09-27T20:27:27.491Z",
+      "createdBy": "V-145401",
+      "client": {
+        "clientType": "HUBSPOT"
+      },
+      "senders": [
+        {
+          "actorId": "V-145401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "11d5d03cb8a8413681b9080a96a20380"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Yes",
+      "richText": "<div>Yes</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b03d4a38-531f-4bb6-9dd8-99a3819902f8",
+      "conversationsThreadId": "3237499265",
+      "createdAt": "2022-09-27T20:26:59.307Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "2dac6d077acb47d0a755febcc67423a2",
+      "conversationsThreadId": "3237499265",
+      "createdAt": "2022-09-27T20:26:58.640Z",
+      "updatedAt": "2022-09-27T20:26:58.640Z",
+      "createdBy": "V-145401",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-145401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "11d5d03cb8a8413681b9080a96a20380"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": " What is price of machine?",
+      "richText": "<div> What is price of machine?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "b78c1bc82ae349a7853012b757400aaf",
+      "conversationsThreadId": "3237499265",
+      "createdAt": "2022-09-27T20:26:58.638Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-145401",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "11d5d03cb8a8413681b9080a96a20380"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

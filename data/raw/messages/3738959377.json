@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "id": "31e48cea-98fa-4c6b-ad1e-09fcf5492a5f",
+      "conversationsThreadId": "3738959377",
+      "createdAt": "2022-12-30T06:42:57.370Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "cbaa644f47904870a449dd3723c8a8cf",
+      "conversationsThreadId": "3738959377",
+      "createdAt": "2022-12-30T06:42:57.045Z",
+      "updatedAt": "2022-12-30T06:42:57.045Z",
+      "createdBy": "V-446251",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-446251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "0010756773b24654aa1e2e0000846e46"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "I’m looking into Mylar bag/ custom Mylar bag manufacturing machinery. Would you be able to able to educate me on the entire step by step process from start to finish, exactly what machinery would be needed & the names of those machines? Any other valuable info would be appreciated:)\n\nThank You!\nHS\n",
+      "richText": "<div>I’m looking into Mylar bag/ custom Mylar bag manufacturing machinery. Would you be able to able to educate me on the entire step by step process from start to finish, exactly what machinery would be needed &amp; the names of those machines? Any other valuable info would be appreciated:)\n\nThank You!\nHS\n</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "30fa9497da3542139098bc0cd76734f2",
+      "conversationsThreadId": "3738959377",
+      "createdAt": "2022-12-30T06:42:57.043Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-446251",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "0010756773b24654aa1e2e0000846e46"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Searching for the best solution?\nWe're here to help you",
+      "richText": "Searching for the best solution?\nWe're here to help you",
+      "channelId": "1000",
+      "channelAccountId": "80850280",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}

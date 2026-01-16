@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "id": "cc3cfa7e-1401-4110-ae22-634c5c66922b",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-27T16:22:58.738Z",
+      "createdBy": "A-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "CLOSED",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "8b849a8d-81dd-40c7-a44d-e0393ff42056",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-26T16:15:23.301Z",
+      "updatedAt": "2024-12-26T16:15:23.301Z",
+      "createdBy": "B-3133399",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399",
+          "name": "Support ASI"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-87370508657",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "4ceb280087dc4aa086e7a172ed9d68b7"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What is your name?",
+      "richText": "<div>What is your name?</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "SENT"
+      },
+      "direction": "OUTGOING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "56611d6d-7c37-4217-983a-84aa6bc109af",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-26T16:15:22.752Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "assignedTo": "B-3133399",
+      "type": "ASSIGNMENT"
+    },
+    {
+      "id": "819d5466-420b-4359-b3fd-b664a7d9b2b1",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-26T16:15:22.618Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "newStatus": "OPEN",
+      "type": "THREAD_STATUS_CHANGE"
+    },
+    {
+      "id": "c260d975fa1640b798a275f3f821edb3",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-26T16:15:21.917Z",
+      "updatedAt": "2024-12-26T16:15:21.917Z",
+      "createdBy": "V-87370508657",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "V-87370508657",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "4ceb280087dc4aa086e7a172ed9d68b7"
+          }
+        }
+      ],
+      "recipients": [],
+      "archived": false,
+      "text": "Dear,\nAre you looking to boost your business with a custom mobile app? At Hoff & Mazor, we specialize in creating innovative and user-friendly apps tailored to your unique needs.\nBenefits of choosing us:\n1. Customized solutions\n2. User-friendly design\n3. Timely delivery\n4. Ongoing support\nDon't miss out on the opportunity to stand out from the competition. Contact us today for a consultation!\nWishing you well this holiday season and throughout 2025.\nBest regards,\nMike Smith\nHoff & Mazor\nmike@hoffnmazordevelop.com\nRespond with stop to optout.",
+      "richText": "<div>Dear,<br>Are you looking to boost your business with a custom mobile app? At Hoff &amp; Mazor, we specialize in creating innovative and user-friendly apps tailored to your unique needs.<br>Benefits of choosing us:<br>1. Customized solutions<br>2. User-friendly design<br>3. Timely delivery<br>4. Ongoing support<br>Don&#x27;t miss out on the opportunity to stand out from the competition. Contact us today for a consultation!<br>Wishing you well this holiday season and throughout 2025.<br>Best regards,<br>Mike Smith<br>Hoff &amp; Mazor<br><a href=\"mailto:mike@hoffnmazordevelop.com\" target=\"_blank\" rel=\"noopener noreferrer\">mike@hoffnmazordevelop.com</a><br>Respond with stop to optout.</div>",
+      "attachments": [],
+      "truncationStatus": "NOT_TRUNCATED",
+      "status": {
+        "statusType": "RECEIVED"
+      },
+      "direction": "INCOMING",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "MESSAGE"
+    },
+    {
+      "id": "a4c6e371-5c66-4295-810a-204d11555918",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-26T16:15:21.915Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "B-3133399"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-87370508657",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "4ceb280087dc4aa086e7a172ed9d68b7"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "What are you looking for?",
+      "richText": "<div>What are you looking for?</div>",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    },
+    {
+      "id": "5404fb27-1734-4c10-96d3-1bf191edaf7a",
+      "conversationsThreadId": "8550639748",
+      "createdAt": "2024-12-26T16:15:21.914Z",
+      "createdBy": "S-hubspot",
+      "client": {
+        "clientType": "SYSTEM"
+      },
+      "senders": [
+        {
+          "actorId": "S-hubspot"
+        }
+      ],
+      "recipients": [
+        {
+          "actorId": "V-87370508657",
+          "deliveryIdentifier": {
+            "type": "CHANNEL_SPECIFIC_OPAQUE_ID",
+            "value": "4ceb280087dc4aa086e7a172ed9d68b7"
+          }
+        }
+      ],
+      "archived": false,
+      "text": "Got any questions? I'm happy to help.",
+      "richText": "Got any questions? I'm happy to help.",
+      "channelId": "1000",
+      "channelAccountId": "240442427",
+      "type": "WELCOME_MESSAGE"
+    }
+  ]
+}
