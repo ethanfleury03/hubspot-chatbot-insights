@@ -2565,18 +2565,23 @@ def main():
         db_conn = init_db(args.db)
         print(f"Database initialized: {args.db}", file=sys.stderr)
     
-    # Counters
+    # Counters (legacy, kept for non-write-chatbot-all modes)
     scanned_total = 0
     scanned_live = 0
     scanned_archived = 0
     matched = 0
-    completed_count = 0  # Count of threads with chatbot_stage == MAX_STAGE (5/5)
     matched_with_contact = 0
     matched_without_contact = 0
     matched_live = 0
     matched_archived = 0
     matched_thread_ids = []
     near_misses = []  # threads with matched_count == 4 (near miss: 4/5 prompts matched)
+    
+    # Unique thread tracking (single source of truth for --write-chatbot-all)
+    seen_thread_ids: set[str] = set()
+    stage_by_tid: dict[str, int] = {}
+    status_by_tid: dict[str, str] = {}
+    contact_by_tid: dict[str, Optional[str]] = {}
     
     # Determine if we need mismatch/nonbot data
     want_classification = args.understand_mismatch or args.understand_nonbot or args.get10_nonbot
@@ -2622,10 +2627,20 @@ def main():
             
             # Progress reporting
             if scanned_total % args.progress_every == 0:
-                rate = (matched / scanned_total * 100) if scanned_total > 0 else 0
-                progress_line = f"  scanned={scanned_total}, completed={matched}, started={started_count}, rate={rate:.2f}%"
-                if args.write_chatbot or args.write_chatbot_all:
-                    progress_line += f", stored={stored_count}, db_path={args.db}"
+                if args.write_chatbot_all:
+                    # Compute from unique thread maps
+                    started = sum(1 for st in stage_by_tid.values() if st >= 1)
+                    completed_stage = sum(1 for st in stage_by_tid.values() if st == MAX_STAGE)
+                    rate = (completed_stage / len(seen_thread_ids) * 100) if len(seen_thread_ids) > 0 else 0
+                    progress_line = f"  scanned={len(seen_thread_ids)}, completed={completed_stage}, started={started}, rate={rate:.2f}%"
+                    if args.write_chatbot or args.write_chatbot_all:
+                        progress_line += f", stored={stored_count}, db_path={args.db}"
+                else:
+                    # Legacy progress for non-write-chatbot-all modes
+                    rate = (matched / scanned_total * 100) if scanned_total > 0 else 0
+                    progress_line = f"  scanned={scanned_total}, completed={matched}, started={started_count}, rate={rate:.2f}%"
+                    if args.write_chatbot:
+                        progress_line += f", stored={stored_count}, db_path={args.db}"
                 print(progress_line, file=sys.stderr)
             
             try:
@@ -2648,11 +2663,19 @@ def main():
                     chatbot_stage, stage_debug_info = compute_chatbot_stage(all_messages)
                 # No messages means stage 0 (already set)
                 
-                # Track started threads (stage >= 1) - must be before continue
+                # Track unique threads (single source of truth for --write-chatbot-all)
+                # Update maps for this thread (overwrite if seen before to handle deduplication)
+                seen_thread_ids.add(thread_id)
+                stage_by_tid[thread_id] = chatbot_stage
+                # Status will be updated when we fetch thread_details for storage (more accurate)
+                # For now, use thread object status as fallback
+                if thread_id not in status_by_tid:
+                    status_by_tid[thread_id] = thread.get('status', 'UNKNOWN')
+                contact_by_tid[thread_id] = associated_contact_id
+                
+                # Legacy counters (for non-write-chatbot-all modes)
                 if chatbot_stage >= 1:
                     started_count += 1
-                
-                # Track completed threads (stage == MAX_STAGE)
                 if chatbot_stage == MAX_STAGE:
                     completed_count += 1
                 
@@ -2663,6 +2686,9 @@ def main():
                     if args.get10_nonbot or args.understand_nonbot:
                         thread_details_for_classification = get_thread_details(thread_id, token=token)
                         time.sleep(DEFAULT_RATE_LIMIT_DELAY)
+                        # Update status from thread_details (more accurate)
+                        if thread_details_for_classification and thread_details_for_classification.get('status'):
+                            status_by_tid[thread_id] = thread_details_for_classification.get('status')
                     
                     # Check if chatbot flow started (stage >= 1 means first prompt found AND human reply)
                     is_started = (chatbot_stage >= 1)
@@ -2751,6 +2777,10 @@ def main():
                             print(f"Warning: Failed to fetch thread details for {thread_id}", file=sys.stderr)
                             failed_thread_ids.append(thread_id)
                         else:
+                            # Update status from thread_details (more accurate than list endpoint)
+                            if thread_details.get('status'):
+                                status_by_tid[thread_id] = thread_details.get('status')
+                            
                             # Fetch all messages for storage
                             messages_agg = get_messages_all_for_storage(thread_id, token=token)
                             
@@ -2801,36 +2831,66 @@ def main():
             print(f"Warning: Failed to save failed thread IDs: {e}", file=sys.stderr)
     
     # Print summary
-    percentage = (matched / scanned_total * 100) if scanned_total > 0 else 0
-    
     print("\n" + "=" * 60, file=sys.stderr)
     print("SUMMARY", file=sys.stderr)
     print("=" * 60, file=sys.stderr)
-    print(f"Total threads scanned: {scanned_total}", file=sys.stderr)
-    if args.archived_mode == 'both':
-        print(f"  - Live threads: {scanned_live}", file=sys.stderr)
-        print(f"  - Archived threads: {scanned_archived}", file=sys.stderr)
-    # For --write-chatbot-all, use stage-based counts; otherwise use matched counts
+    
     if args.write_chatbot_all:
-        print(f"Completed chatbot threads ({MAX_STAGE}/{MAX_STAGE}): {completed_count}", file=sys.stderr)
-        print(f"Started chatbot threads (>={1}/{MAX_STAGE}): {started_count}", file=sys.stderr)
+        # Compute all metrics from unique thread maps (single source of truth)
+        total_scanned = len(seen_thread_ids)
+        started = sum(1 for st in stage_by_tid.values() if st >= 1)
+        completed_stage = sum(1 for st in stage_by_tid.values() if st == MAX_STAGE)
+        completed_stage_closed = sum(1 for tid in seen_thread_ids 
+                                     if stage_by_tid.get(tid) == MAX_STAGE 
+                                     and status_by_tid.get(tid) == "CLOSED")
+        completed_stage_open = completed_stage - completed_stage_closed
+        
+        # Contact stats for started threads
+        started_with_contact = sum(1 for tid in seen_thread_ids 
+                                   if stage_by_tid.get(tid, 0) >= 1 
+                                   and contact_by_tid.get(tid) is not None)
+        started_missing_contact = started - started_with_contact
+        started_with_contact_pct = (started_with_contact / started * 100) if started > 0 else 0
+        
+        # Notes conversion estimate (eligible: started threads with contact)
+        notes_to_create = started_with_contact
+        
+        print(f"Total threads scanned: {total_scanned}", file=sys.stderr)
+        print(f"Started chatbot threads (>={1}/{MAX_STAGE}): {started}", file=sys.stderr)
+        print(f"Completed chatbot threads ({MAX_STAGE}/{MAX_STAGE}): {completed_stage}", file=sys.stderr)
+        print(f"  - Completed & CLOSED: {completed_stage_closed}", file=sys.stderr)
+        print(f"  - Completed & OPEN: {completed_stage_open}", file=sys.stderr)
+        print(f"Started threads with associatedContactId: {started_with_contact}", file=sys.stderr)
+        print(f"Started threads missing associatedContactId: {started_missing_contact}", file=sys.stderr)
+        print(f"Percentage (started with contact): {started_with_contact_pct:.2f}%", file=sys.stderr)
+        
+        print("\nNote conversion estimate:", file=sys.stderr)
+        print(f"  - Notes to create (eligible: started_with_contact): {notes_to_create}", file=sys.stderr)
+        print(f"  - Contacts to create/resolve (needs inference): {started_missing_contact}", file=sys.stderr)
     else:
+        # Legacy summary for non-write-chatbot-all modes
+        percentage = (matched / scanned_total * 100) if scanned_total > 0 else 0
+        print(f"Total threads scanned: {scanned_total}", file=sys.stderr)
         print(f"Total chatbot threads found: {matched}", file=sys.stderr)
-    
-    if args.archived_mode == 'both':
-        print(f"  - From live: {matched_live}", file=sys.stderr)
-        print(f"  - From archived: {matched_archived}", file=sys.stderr)
-    print(f"Chatbot threads with associatedContactId: {matched_with_contact}", file=sys.stderr)
-    print(f"Chatbot threads missing associatedContactId: {matched_without_contact}", file=sys.stderr)
-    print(f"Percentage: {percentage:.2f}%", file=sys.stderr)
-    
-    print("\nNote conversion estimate:", file=sys.stderr)
-    print(f"  - Notes to create (minimum): {matched}", file=sys.stderr)
-    print(f"  - Contacts to create/resolve (needs inference): {matched_without_contact}", file=sys.stderr)
+        if args.archived_mode == 'both':
+            print(f"  - From live: {matched_live}", file=sys.stderr)
+            print(f"  - From archived: {matched_archived}", file=sys.stderr)
+        print(f"Chatbot threads with associatedContactId: {matched_with_contact}", file=sys.stderr)
+        print(f"Chatbot threads missing associatedContactId: {matched_without_contact}", file=sys.stderr)
+        print(f"Percentage: {percentage:.2f}%", file=sys.stderr)
+        
+        print("\nNote conversion estimate:", file=sys.stderr)
+        print(f"  - Notes to create (minimum): {matched}", file=sys.stderr)
+        print(f"  - Contacts to create/resolve (needs inference): {matched_without_contact}", file=sys.stderr)
     
     if args.write_chatbot or args.write_chatbot_all:
         print(f"\nDatabase storage:", file=sys.stderr)
-        print(f"  - Total started chatbot threads (stage>={1}): {started_count}", file=sys.stderr)
+        if args.write_chatbot_all:
+            # Use computed from maps
+            started = sum(1 for st in stage_by_tid.values() if st >= 1)
+            print(f"  - Total started chatbot threads (stage>={1}): {started}", file=sys.stderr)
+        else:
+            print(f"  - Total started chatbot threads (stage>={1}): {started_count}", file=sys.stderr)
         if args.write_chatbot:
             print(f"  - Stored (completed only, stage={MAX_STAGE}): {stored_count}", file=sys.stderr)
         elif args.write_chatbot_all:

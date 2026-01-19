@@ -3451,10 +3451,11 @@ def submission_to_note_text(form_name: str, form_guid: str, submission_obj: Dict
     
     lines.extend(response_lines)
     
-    # Add marker for duplicate detection (plain text format)
+    # Add durable marker for duplicate detection (plain text format)
     if conversion_id:
+        submission_key = make_submission_key(form_guid, conversion_id)
         lines.append("")
-        lines.append(f"[hs_form_submission: formGuid={form_guid} conversionId={conversion_id}]")
+        lines.append(f"hs_form_submission_key={submission_key}")
     
     note_body = '\n'.join(lines)
     
@@ -3556,11 +3557,11 @@ def submission_to_note_html(form_name: str, form_guid: str, submission_obj: Dict
     html_parts.extend(response_items)
     html_parts.append("</ul>")
     
-    # Add hidden marker for duplicate detection
+    # Add durable marker for duplicate detection (visible-safe, survives HubSpot storage)
     if conversion_id:
-        form_guid_escaped_marker = html_escape(form_guid)
-        conversion_id_escaped = html_escape(conversion_id)
-        marker = f"<br><br><!-- hs_form_submission: formGuid={form_guid_escaped_marker} conversionId={conversion_id_escaped} -->"
+        submission_key = make_submission_key(form_guid, conversion_id)
+        # Use hidden span (font-size:0, color:transparent) instead of HTML comment
+        marker = f'<br><br><span style="font-size:0; color:transparent;">hs_form_submission_key={submission_key}</span>'
         html_parts.append(marker)
     
     note_body_html = ''.join(html_parts)
@@ -3575,26 +3576,108 @@ def submission_to_note_html(form_name: str, form_guid: str, submission_obj: Dict
     return (note_body_html, derived)
 
 
+def make_submission_key(form_guid: str, conversion_id: str) -> str:
+    """Create submission key from formGuid and conversionId."""
+    return f"{form_guid}:{conversion_id}"
+
+
 def extract_marker_key(note_body: str) -> Optional[str]:
     """
     Extract submission_key from note body marker.
     
     Returns: submission_key (formGuid:conversionId) if marker found, None otherwise.
     
-    Supports both HTML comment format and plain text marker format.
+    Supports:
+    - New durable marker: hs_form_submission_key=FORMGUID:CONVERSIONID (in hidden span or plain text)
+    - Old marker format: hs_form_submission: formGuid=... conversionId=... (backward compatibility)
     """
     if not note_body:
         return None
     
+    # Try new durable marker format first: hs_form_submission_key=FORMGUID:CONVERSIONID
+    # Pattern matches UUIDs with hyphens: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    new_pattern = r'hs_form_submission_key=([0-9a-fA-F\-]+:[0-9a-fA-F\-]+)'
+    match = re.search(new_pattern, note_body)
+    if match:
+        return match.group(1)  # Already in formGuid:conversionId format
+    
+    # Fallback: old marker format (backward compatibility)
     # Pattern for HTML comment: <!-- hs_form_submission: formGuid=... conversionId=... -->
     # Pattern for plain text: [hs_form_submission: formGuid=... conversionId=...]
-    pattern = r'hs_form_submission:\s*formGuid=([^\s>]+)\s+conversionId=([^\s>]+)'
-    
-    match = re.search(pattern, note_body)
+    old_pattern = r'hs_form_submission:\s*formGuid=([^\s>]+)\s+conversionId=([^\s>]+)'
+    match = re.search(old_pattern, note_body)
     if match:
         form_guid = match.group(1)
         conversion_id = match.group(2)
         return f"{form_guid}:{conversion_id}"
+    
+    return None
+
+
+def extract_semantic_key(note_body: str) -> Optional[str]:
+    """
+    Extract semantic key from note body (fallback when marker missing).
+    
+    Returns: semantic_key as "{page}|{date}|{email}" or None if parsing fails.
+    
+    Supports both HTML and plain text formats.
+    """
+    if not note_body:
+        return None
+    
+    page_url = None
+    submitted_date = None
+    email = None
+    
+    # Detect format
+    is_html = '<strong>' in note_body or '<br>' in note_body or '<ul>' in note_body
+    
+    if is_html:
+        # HTML format parsing
+        # Extract Page: <strong>Page:</strong> URL<br>
+        page_match = re.search(r'<strong>Page:</strong>\s*([^<]+)<br>', note_body)
+        if page_match:
+            page_url = page_match.group(1).strip()
+            # Remove "(unknown)" if present
+            if page_url == "(unknown)":
+                page_url = None
+        
+        # Extract Submitted: <strong>Submitted:</strong> YYYY-MM-DD<br>
+        date_match = re.search(r'<strong>Submitted:</strong>\s*([0-9]{4}-[0-9]{2}-[0-9]{2})', note_body)
+        if date_match:
+            submitted_date = date_match.group(1).strip()
+        
+        # Extract Email: <li><strong>Email:</strong> value</li>
+        email_match = re.search(r'<li><strong>Email:</strong>\s*([^<]+)</li>', note_body)
+        if email_match:
+            email = email_match.group(1).strip()
+    else:
+        # Plain text format parsing
+        lines = note_body.split('\n')
+        for line in lines:
+            line = line.strip()
+            if line.startswith('Page:'):
+                page_url = line[5:].strip()  # Remove "Page:"
+                if page_url == "(unknown)":
+                    page_url = None
+            elif line.startswith('Submitted:'):
+                date_match = re.search(r'Submitted:\s*([0-9]{4}-[0-9]{2}-[0-9]{2})', line)
+                if date_match:
+                    submitted_date = date_match.group(1).strip()
+            elif line.startswith('• Email:'):
+                email = line[8:].strip()  # Remove "• Email:"
+    
+    # Normalize values
+    if page_url:
+        # Use same normalization as normalize_url_for_dedupe for consistency
+        page_url = normalize_url_for_dedupe(page_url)
+    
+    if email:
+        email = email.lower().strip()
+    
+    # Build semantic key if we have all three
+    if page_url and submitted_date and email:
+        return f"{page_url}|{submitted_date}|{email}"
     
     return None
 
@@ -4696,11 +4779,14 @@ def batch_read_notes(note_ids: List[str], token: str, timeout: int = DEFAULT_TIM
 
 
 def get_contact_existing_note_bodies(contact_id: str, token: str, 
-                                     contact_cache: Dict[str, set], timeout: int = DEFAULT_TIMEOUT) -> set:
+                                     contact_cache: Dict[str, Dict[str, Any]], timeout: int = DEFAULT_TIMEOUT) -> Dict[str, Any]:
     """
-    Get set of existing note bodies for a contact, using cache if available.
+    Get existing note data for a contact, using cache if available.
     
-    Returns: set of note body strings
+    Returns: dict with keys:
+        'bodies': set of note body strings
+        'marker_keys': set of submission_keys extracted from markers
+        'semantic_keys': set of semantic keys (page|date|email)
     """
     # Check cache first
     if contact_id in contact_cache:
@@ -4710,8 +4796,13 @@ def get_contact_existing_note_bodies(contact_id: str, token: str,
     note_ids = list_note_ids_for_contact(contact_id, token, timeout=timeout)
     
     if not note_ids:
-        contact_cache[contact_id] = set()
-        return set()
+        empty_result = {
+            'bodies': set(),
+            'marker_keys': set(),
+            'semantic_keys': set()
+        }
+        contact_cache[contact_id] = empty_result
+        return empty_result
     
     # Warn if hitting limit
     if len(note_ids) >= MAX_NOTES_TO_CHECK_PER_CONTACT:
@@ -4721,13 +4812,34 @@ def get_contact_existing_note_bodies(contact_id: str, token: str,
     # Batch read note bodies
     note_bodies_dict = batch_read_notes(note_ids, token, timeout=timeout)
     
-    # Convert to set
-    note_bodies_set = set(note_bodies_dict.values())
+    # Extract keys from note bodies
+    note_bodies_set = set()
+    marker_keys_set = set()
+    semantic_keys_set = set()
+    
+    for note_body in note_bodies_dict.values():
+        note_bodies_set.add(note_body)
+        
+        # Extract marker key
+        marker_key = extract_marker_key(note_body)
+        if marker_key:
+            marker_keys_set.add(marker_key)
+        else:
+            # If no marker, try semantic key as fallback
+            semantic_key = extract_semantic_key(note_body)
+            if semantic_key:
+                semantic_keys_set.add(semantic_key)
+    
+    result = {
+        'bodies': note_bodies_set,
+        'marker_keys': marker_keys_set,
+        'semantic_keys': semantic_keys_set
+    }
     
     # Cache it
-    contact_cache[contact_id] = note_bodies_set
+    contact_cache[contact_id] = result
     
-    return note_bodies_set
+    return result
 
 
 def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int, 
@@ -4827,13 +4939,14 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
     eligible_submissions = 0
     skipped_local_submission_key = 0
     skipped_existing_note_marker = 0
+    skipped_existing_note_semantic = 0
     skipped_existing_note_exact = 0
     fetched_contact_note_sets = 0
     created_notes = 0
     errors = []
     
-    # Per-contact note body cache
-    contact_existing_note_bodies: Dict[str, set] = {}
+    # Per-contact note cache (bodies, marker_keys, semantic_keys)
+    contact_existing_note_cache: Dict[str, Dict[str, Any]] = {}
     
     # Track first email with created note (for manual verification)
     first_created_email = None
@@ -4897,7 +5010,7 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                 # Build submission_key (formGuid:conversionId)
                 # If conversionId missing, fall back to derived hash
                 if conversion_id:
-                    submission_key = f"{form_guid}:{conversion_id}"
+                    submission_key = make_submission_key(form_guid, conversion_id)
                 else:
                     # Fallback: derive from email+page+date+fields
                     values = submission.get('values', [])
@@ -4914,8 +5027,16 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                     }
                     fallback_json = json.dumps(fallback_payload, sort_keys=True, separators=(',', ':'))
                     fallback_hash = hashlib.sha256(fallback_json.encode('utf-8')).hexdigest()
-                    submission_key = f"{form_guid}:{fallback_hash}"
+                    submission_key = make_submission_key(form_guid, fallback_hash)
                     conversion_id = fallback_hash  # Use hash as conversionId for fallback
+                
+                # Get normalized page URL and submitted date (needed for semantic key)
+                page_url = submission.get('pageUrl', '')
+                normalized_page_url = normalize_url_for_dedupe(page_url)
+                submitted_date = submitted_day_ms(submitted_at_ms)
+                
+                # Build semantic key (fallback for notes without markers)
+                semantic_key = f"{normalized_page_url}|{submitted_date}|{submission_email_normalized}"
                 
                 # Check local idempotency (submission_key already processed)
                 if submission_key in submission_keys_seen:
@@ -4929,46 +5050,45 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                 # Compute note body hash for audit (based on HTML version)
                 note_body_hash = hashlib.sha256(note_body_html.encode('utf-8')).hexdigest()
                 
-                # Pre-check: Check if contact already has identical note body
+                # Pre-check: Check if contact already has identical note
                 # Track if this is first fetch for this contact (before cache is populated)
-                is_first_fetch = contact_id not in contact_existing_note_bodies
+                is_first_fetch = contact_id not in contact_existing_note_cache
                 
-                existing_note_bodies = get_contact_existing_note_bodies(
+                existing_note_data = get_contact_existing_note_bodies(
                     contact_id, 
                     new_token, 
-                    contact_existing_note_bodies,
+                    contact_existing_note_cache,
                     timeout=timeout
                 )
                 
                 if is_first_fetch:
                     fetched_contact_note_sets += 1
                 
-                # Check for marker match first (cheaper than full body comparison)
-                marker_found = False
-                for existing_body in existing_note_bodies:
-                    existing_marker_key = extract_marker_key(existing_body)
-                    if existing_marker_key == submission_key:
-                        marker_found = True
-                        break
+                existing_marker_keys = existing_note_data.get('marker_keys', set())
+                existing_semantic_keys = existing_note_data.get('semantic_keys', set())
+                existing_note_bodies = existing_note_data.get('bodies', set())
                 
-                if marker_found:
+                # Skip rule A: Marker key match (fastest, most reliable)
+                if submission_key in existing_marker_keys:
                     skipped_existing_note_marker += 1
                     # Add to local set to skip in future runs
                     submission_keys_seen.add(submission_key)
                     continue
                 
-                # Check for exact body match (check both HTML and text versions to avoid duplicates)
+                # Skip rule B: Semantic key match (fallback for notes without markers)
+                if semantic_key in existing_semantic_keys:
+                    skipped_existing_note_semantic += 1
+                    # Add to local set to skip in future runs
+                    submission_keys_seen.add(submission_key)
+                    continue
+                
+                # Skip rule C: Exact body match (check both HTML and text versions to avoid duplicates)
                 # This handles cases where old notes exist in plain text format
                 if note_body_html in existing_note_bodies or note_body_text in existing_note_bodies:
                     skipped_existing_note_exact += 1
                     # Add to local set to skip in future runs
                     submission_keys_seen.add(submission_key)
                     continue
-                
-                # Get normalized page URL and submitted date for JSONL
-                page_url = submission.get('pageUrl', '')
-                normalized_page_url = normalize_url_for_dedupe(page_url)
-                submitted_date = submitted_day_ms(submitted_at_ms)
                 
                 # Dry-run: collect preview
                 if dry_run:
@@ -4988,7 +5108,15 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                     # Mark as seen (for dry-run dedupe)
                     submission_keys_seen.add(submission_key)
                     # Add to cache (simulate creation)
-                    contact_existing_note_bodies[contact_id].add(note_body_html)
+                    if contact_id not in contact_existing_note_cache:
+                        contact_existing_note_cache[contact_id] = {
+                            'bodies': set(),
+                            'marker_keys': set(),
+                            'semantic_keys': set()
+                        }
+                    contact_existing_note_cache[contact_id]['bodies'].add(note_body_html)
+                    contact_existing_note_cache[contact_id]['marker_keys'].add(submission_key)
+                    contact_existing_note_cache[contact_id]['semantic_keys'].add(semantic_key)
                     created_notes += 1
                     
                     # Print preview every 25 notes
@@ -5042,7 +5170,15 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                     # Mark as seen
                     submission_keys_seen.add(submission_key)
                     # Add to cache (so subsequent submissions for same contact skip this)
-                    contact_existing_note_bodies[contact_id].add(note_body_html)
+                    if contact_id not in contact_existing_note_cache:
+                        contact_existing_note_cache[contact_id] = {
+                            'bodies': set(),
+                            'marker_keys': set(),
+                            'semantic_keys': set()
+                        }
+                    contact_existing_note_cache[contact_id]['bodies'].add(note_body_html)
+                    contact_existing_note_cache[contact_id]['marker_keys'].add(submission_key)
+                    contact_existing_note_cache[contact_id]['semantic_keys'].add(semantic_key)
                     created_notes += 1
                     
                     # Track first email for manual verification
@@ -5051,7 +5187,7 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                 
                 # Progress update every 100 scanned
                 if scanned_submissions % 100 == 0:
-                    print(f"  scanned={scanned_submissions}, eligible={eligible_submissions}, created={created_notes}, skipped_existing_note_exact={skipped_existing_note_exact}, skipped_marker={skipped_existing_note_marker}, skipped_local_key={skipped_local_submission_key}", file=sys.stderr)
+                    print(f"  scanned={scanned_submissions}, eligible={eligible_submissions}, created={created_notes}, skipped_exact={skipped_existing_note_exact}, skipped_marker={skipped_existing_note_marker}, skipped_semantic={skipped_existing_note_semantic}, skipped_local={skipped_local_submission_key}", file=sys.stderr)
                 
                 if limit > 0 and created_notes >= limit:
                     break
@@ -5083,6 +5219,7 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
                 'would_create': created_notes,
                 'skipped_local_submission_key': skipped_local_submission_key,
                 'skipped_existing_note_marker': skipped_existing_note_marker,
+                'skipped_existing_note_semantic': skipped_existing_note_semantic,
                 'skipped_existing_note_exact': skipped_existing_note_exact,
                 'fetched_contact_note_sets': fetched_contact_note_sets,
                 'since_date': since_date,
@@ -5120,6 +5257,7 @@ def run_create_notes(old_token: str, new_token: str, dry_run: bool, limit: int,
         print(f"Created notes: {created_notes}", file=sys.stderr)
     print(f"Skipped (local submission key): {skipped_local_submission_key}", file=sys.stderr)
     print(f"Skipped (existing note marker): {skipped_existing_note_marker}", file=sys.stderr)
+    print(f"Skipped (existing note semantic): {skipped_existing_note_semantic}", file=sys.stderr)
     print(f"Skipped (existing note exact match): {skipped_existing_note_exact}", file=sys.stderr)
     print(f"Fetched note sets for contacts: {fetched_contact_note_sets}", file=sys.stderr)
     if errors:
