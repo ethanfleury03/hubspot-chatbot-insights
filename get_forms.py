@@ -20,6 +20,7 @@ import html
 import json
 import os
 import re
+import sqlite3
 import sys
 import time
 from collections import Counter
@@ -1471,6 +1472,57 @@ def main():
         help='Comma-separated form GUIDs to process (use with --create-notes)'
     )
     parser.add_argument(
+        '--check-duplicates',
+        action='store_true',
+        help='Scan NEW portal contacts and detect duplicate form submission notes (read-only)'
+    )
+    parser.add_argument(
+        '--max-contacts',
+        type=int,
+        default=0,
+        help='Maximum contacts to scan (0 = no limit, use with --check-duplicates)'
+    )
+    parser.add_argument(
+        '--notes-limit-per-contact',
+        type=int,
+        default=500,
+        help='Maximum notes to check per contact (default: 500, use with --check-duplicates)'
+    )
+    parser.add_argument(
+        '--append',
+        action='store_true',
+        help='Append to existing duplicate results instead of clearing table (use with --check-duplicates)'
+    )
+    parser.add_argument(
+        '--resume-cursor',
+        action='store_true',
+        help='Resume --check-duplicates scan from saved cursor checkpoint'
+    )
+    parser.add_argument(
+        '--cursor-file',
+        type=str,
+        default='./out/check_duplicates_cursor.json',
+        help='Path to cursor checkpoint file (default: ./out/check_duplicates_cursor.json)'
+    )
+    parser.add_argument(
+        '--checkpoint-every',
+        type=int,
+        default=200,
+        help='Save checkpoint every N contacts scanned (default: 200, use with --check-duplicates)'
+    )
+    parser.add_argument(
+        '--progress-every',
+        type=int,
+        default=200,
+        help='Print progress every N contacts scanned (default: 200, use with --check-duplicates)'
+    )
+    parser.add_argument(
+        '--check-duplicates-from-jsonl',
+        type=str,
+        metavar='PATH',
+        help='Check duplicates only for contacts in JSONL file (e.g., ./out/created_note_keys.jsonl)'
+    )
+    parser.add_argument(
         '--debug-submissions',
         action='store_true',
         help='Debug mode: dump raw submission payloads to disk'
@@ -1546,7 +1598,7 @@ def main():
     
     args = parser.parse_args()
     
-    if not args.init and not args.count_contacts and not args.count_contactsold and not args.new_contacts and not args.since_migrate and not args.db_difference and not args.debug_submissions and not args.validate_extraction and not args.get_one and not args.test_10 and not args.create_notes:
+    if not args.init and not args.count_contacts and not args.count_contactsold and not args.new_contacts and not args.since_migrate and not args.db_difference and not args.debug_submissions and not args.validate_extraction and not args.get_one and not args.test_10 and not args.create_notes and not args.check_duplicates:
         parser.error("At least one of --init, --count-contacts, --count-contactsold, --new-contacts, --since-migrate, --db-difference, --debug-submissions, --validate-extraction, --get-one, --test-10, or --create-notes is required")
     
     # Validate --create-notes flags
@@ -1558,11 +1610,11 @@ def main():
     old_token = None
     new_token = None
     
-    if args.init or args.count_contacts or args.count_contactsold or args.new_contacts or args.since_migrate or args.db_difference or args.debug_submissions or args.validate_extraction or args.get_one or args.test_10 or args.create_notes:
+    if args.init or args.count_contacts or args.count_contactsold or args.new_contacts or args.since_migrate or args.db_difference or args.debug_submissions or args.validate_extraction or args.get_one or args.test_10 or args.create_notes or args.check_duplicates:
         old_token = get_old_access_token()
         print("Using OLD_ACCESS_TOKEN from .env file", file=sys.stderr)
     
-    if args.count_contacts or args.new_contacts or args.since_migrate or args.db_difference or args.get_one or args.test_10 or args.create_notes:
+    if args.count_contacts or args.new_contacts or args.since_migrate or args.db_difference or args.get_one or args.test_10 or args.create_notes or args.check_duplicates:
         new_token = get_access_token()
         print("Using ACCESS_TOKEN from .env file", file=sys.stderr)
     
@@ -1764,6 +1816,24 @@ def main():
         run_db_difference(
             old_token=old_token,
             new_token=new_token,
+            timeout=args.timeout_seconds
+        )
+    
+    # Run --check-duplicates if requested
+    if args.check_duplicates or args.check_duplicates_from_jsonl:
+        if not new_token:
+            print("Error: ACCESS_TOKEN required for --check-duplicates", file=sys.stderr)
+            sys.exit(2)
+        run_check_duplicates(
+            token=new_token,
+            max_contacts=args.max_contacts,
+            notes_limit_per_contact=args.notes_limit_per_contact,
+            resume_cursor=args.resume_cursor,
+            append=args.append,
+            cursor_file=args.cursor_file,
+            checkpoint_every=args.checkpoint_every,
+            progress_every=args.progress_every,
+            jsonl_path=args.check_duplicates_from_jsonl,
             timeout=args.timeout_seconds
         )
     
@@ -3682,6 +3752,69 @@ def extract_semantic_key(note_body: str) -> Optional[str]:
     return None
 
 
+def normalize_body_for_exact_compare(note_body: str) -> str:
+    """
+    Normalize note body for exact comparison.
+    
+    Conservative normalization:
+    - Replace \r\n with \n
+    - Replace \r with \n
+    - Strip leading/trailing whitespace only
+    
+    Returns normalized string.
+    """
+    if not note_body:
+        return ''
+    
+    # Normalize line endings
+    normalized = note_body.replace('\r\n', '\n').replace('\r', '\n')
+    # Strip only leading/trailing whitespace (conservative)
+    normalized = normalized.strip()
+    
+    return normalized
+
+
+def body_hash(note_body: str) -> str:
+    """
+    Compute SHA-256 hash of normalized note body.
+    
+    Returns: hex digest string
+    """
+    normalized = normalize_body_for_exact_compare(note_body)
+    return hashlib.sha256(normalized.encode('utf-8')).hexdigest()
+
+
+def get_audit_db_path() -> str:
+    """
+    Get path to audit database.
+    
+    Returns: path to ./out/notes_audit.sqlite
+    """
+    db_path = './out/notes_audit.sqlite'
+    os.makedirs(os.path.dirname(db_path), exist_ok=True)
+    return db_path
+
+
+def is_candidate_form_submission_note(note_body: str) -> bool:
+    """
+    Determine if a note is a candidate form submission note.
+    
+    Returns: True if note appears to be a form submission note
+    """
+    if not note_body:
+        return False
+    
+    # Check for form submission indicators
+    if "Website form submission" in note_body:
+        return True
+    if "hs_form_submission_key=" in note_body:
+        return True
+    if "hs_form_submission:" in note_body:
+        return True
+    
+    return False
+
+
 def parse_date_to_toronto_midnight(date_str: str) -> Optional[int]:
     """
     Parse YYYY-MM-DD date string to epoch milliseconds at midnight America/Toronto.
@@ -5454,6 +5587,636 @@ def run_db_difference(old_token: str, new_token: str, timeout: int):
         json.dump(output, f, indent=2, ensure_ascii=False)
     
     print(f"\nJSON results written to: {json_path}", file=sys.stderr)
+
+
+def load_duplicates_cursor(cursor_path: str) -> Optional[Dict[str, Any]]:
+    """
+    Load cursor checkpoint from file.
+    
+    Returns: cursor dict or None if file doesn't exist or is invalid.
+    """
+    if not os.path.exists(cursor_path):
+        return None
+    
+    try:
+        with open(cursor_path, 'r', encoding='utf-8') as f:
+            cursor = json.load(f)
+            return cursor
+    except Exception as e:
+        print(f"Warning: Failed to load cursor file {cursor_path}: {e}", file=sys.stderr)
+        return None
+
+
+def save_duplicates_cursor(cursor_path: str, cursor_data: Dict[str, Any]) -> None:
+    """
+    Save cursor checkpoint to file.
+    """
+    try:
+        os.makedirs(os.path.dirname(cursor_path), exist_ok=True)
+        with open(cursor_path, 'w', encoding='utf-8') as f:
+            json.dump(cursor_data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Warning: Failed to save cursor file {cursor_path}: {e}", file=sys.stderr)
+
+
+def _process_contact_for_duplicates(contact_id: str, email: str, token: str, 
+                                    notes_limit_per_contact: int, portal_id: str, checked_at: str,
+                                    db_cursor, db_conn, api_calls_ref: List[int],
+                                    contacts_with_email_ref: List[int], contacts_with_any_notes_ref: List[int],
+                                    contacts_with_candidate_notes_ref: List[int], contacts_with_duplicates_ref: List[int],
+                                    duplicate_groups_found_ref: List[int], redundant_notes_total_ref: List[int],
+                                    timeout: int) -> None:
+    """
+    Process a single contact for duplicate notes.
+    
+    Updates counters via list references (mutable).
+    """
+    # Fetch note IDs for this contact
+    note_ids = []
+    note_after = None
+    
+    while True:
+        note_url = f"{BASE_URL}/crm/v3/objects/contacts/{contact_id}/associations/notes"
+        note_params = {'limit': 500}
+        if note_after:
+            note_params['after'] = note_after
+        
+        api_calls_ref[0] += 1
+        note_response = hubspot_get(note_url, params=note_params, token=token, timeout=timeout)
+        note_results = note_response.get('results', [])
+        
+        for result in note_results:
+            note_id = result.get('id', '') if isinstance(result, dict) else str(result)
+            if note_id:
+                note_ids.append(note_id)
+        
+        # Check limit per contact
+        if notes_limit_per_contact > 0 and len(note_ids) >= notes_limit_per_contact:
+            if len(note_ids) > notes_limit_per_contact:
+                note_ids = note_ids[:notes_limit_per_contact]
+            break
+        
+        # Check for next page
+        paging = note_response.get('paging', {})
+        next_page = paging.get('next', {})
+        note_after = next_page.get('after')
+        if not note_after:
+            break
+    
+    # Short-circuit if no notes
+    if not note_ids:
+        return
+    
+    contacts_with_any_notes_ref[0] += 1
+    
+    # Batch read note bodies
+    notes_data = {}  # note_id -> {body, createdate}
+    
+    chunk_size = 100
+    for i in range(0, len(note_ids), chunk_size):
+        chunk = note_ids[i:i + chunk_size]
+        
+        url_batch = f"{BASE_URL}/crm/v3/objects/notes/batch/read"
+        payload = {
+            'properties': ['hs_note_body', 'hs_createdate'],
+            'inputs': [{'id': note_id} for note_id in chunk]
+        }
+        
+        api_calls_ref[0] += 1
+        try:
+            batch_response = hubspot_post(url_batch, payload, token=token, timeout=timeout)
+            batch_results = batch_response.get('results', [])
+            
+            for result in batch_results:
+                note_id = result.get('id', '')
+                properties = result.get('properties', {})
+                body = properties.get('hs_note_body', '')
+                createdate = properties.get('hs_createdate', '')
+                
+                if note_id and body:
+                    notes_data[note_id] = {
+                        'body': body,
+                        'createdate': createdate
+                    }
+        except Exception as e:
+            print(f"  Warning: Error batch reading notes for contact {contact_id}: {e}", file=sys.stderr)
+            continue
+    
+    # Identify candidate notes and extract duplicate keys
+    candidate_notes = {}  # note_id -> (key_type, key, body, createdate)
+    
+    for note_id, note_info in notes_data.items():
+        body = note_info['body']
+        createdate = note_info['createdate']
+        
+        if not is_candidate_form_submission_note(body):
+            continue
+        
+        # Extract duplicate key
+        marker_key = extract_marker_key(body)
+        if marker_key:
+            key_type = 'marker'
+            key = marker_key
+        else:
+            key_type = 'body'
+            key = body_hash(body)
+        
+        candidate_notes[note_id] = (key_type, key, body, createdate)
+    
+    if not candidate_notes:
+        return
+    
+    contacts_with_candidate_notes_ref[0] += 1
+    
+    # Group by duplicate key
+    groups: Dict[Tuple[str, str], List[Tuple[str, str]]] = {}  # (key_type, key) -> [(note_id, createdate), ...]
+    
+    for note_id, (key_type, key, body, createdate) in candidate_notes.items():
+        group_key = (key_type, key)
+        if group_key not in groups:
+            groups[group_key] = []
+        groups[group_key].append((note_id, createdate))
+    
+    # Find duplicate groups (len >= 2)
+    duplicate_groups = {k: v for k, v in groups.items() if len(v) >= 2}
+    
+    if not duplicate_groups:
+        return
+    
+    contacts_with_duplicates_ref[0] += 1
+    duplicate_groups_found_ref[0] += len(duplicate_groups)
+    
+    # Insert duplicate groups into database
+    for (key_type, key), note_list in duplicate_groups.items():
+        notes_in_group = len(note_list)
+        redundant_count = notes_in_group - 1
+        redundant_notes_total_ref[0] += redundant_count
+        
+        # Get note IDs and createdates
+        note_ids_list = [nid for nid, _ in note_list]
+        createdates = [cd for _, cd in note_list if cd]
+        
+        # Get canonical note body (first note's body)
+        first_note_id = note_ids_list[0]
+        canonical_body = candidate_notes[first_note_id][2]  # body is at index 2
+        
+        # Compute first/last createdate
+        first_createdate = min(createdates) if createdates else None
+        last_createdate = max(createdates) if createdates else None
+        
+        # Insert row
+        db_cursor.execute("""
+            INSERT INTO notes_duplicates 
+            (checked_at, portal_id, contact_id, email, duplicate_key_type, duplicate_key,
+             notes_in_group, redundant_count, note_body, note_ids_json, 
+             first_hs_createdate, last_hs_createdate)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            checked_at,
+            portal_id,
+            contact_id,
+            email,
+            key_type,
+            key,
+            notes_in_group,
+            redundant_count,
+            canonical_body,
+            json.dumps(note_ids_list),
+            first_createdate,
+            last_createdate
+        ))
+    
+    db_conn.commit()
+
+
+def run_check_duplicates(token: str, max_contacts: int, notes_limit_per_contact: int,
+                         resume_cursor: bool, append: bool, cursor_file: str,
+                         checkpoint_every: int, progress_every: int, jsonl_path: Optional[str],
+                         timeout: int):
+    """
+    Scan NEW portal contacts and detect duplicate form submission notes.
+    
+    Supports:
+    - Full contact scan with pagination and resume
+    - Targeted scan from JSONL file (created_note_keys.jsonl)
+    - Cursor-based checkpointing
+    - Progress visibility
+    
+    Writes results to SQLite table notes_duplicates.
+    """
+    print("\n" + "=" * 60, file=sys.stderr)
+    print("CHECK DUPLICATE NOTES", file=sys.stderr)
+    print("=" * 60, file=sys.stderr)
+    
+    # Get portal details
+    print("Fetching portal details...", file=sys.stderr)
+    portal_details = get_portal_details(token, timeout=timeout)
+    portal_id = portal_details.get('portalId') or portal_details.get('portal_id') or 'unknown'
+    print(f"Portal ID: {portal_id}", file=sys.stderr)
+    
+    # Determine mode
+    mode = "jsonl" if jsonl_path else "all_contacts"
+    
+    # Load cursor if resuming
+    saved_cursor = None
+    if resume_cursor:
+        saved_cursor = load_duplicates_cursor(cursor_file)
+        if saved_cursor:
+            saved_portal_id = saved_cursor.get('portalId')
+            if saved_portal_id and saved_portal_id != portal_id:
+                print(f"Error: Cursor file portalId ({saved_portal_id}) does not match current portal ({portal_id})", file=sys.stderr)
+                print("Cannot resume across different portals. Delete cursor file or use correct portal.", file=sys.stderr)
+                sys.exit(2)
+            saved_mode = saved_cursor.get('mode')
+            if saved_mode and saved_mode != mode:
+                print(f"Error: Cursor file mode ({saved_mode}) does not match current mode ({mode})", file=sys.stderr)
+                print("Cannot resume across different modes. Delete cursor file or use matching mode.", file=sys.stderr)
+                sys.exit(2)
+    
+    # Set up database
+    db_path = get_audit_db_path()
+    print(f"Using database: {db_path}", file=sys.stderr)
+    
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    # Create table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS notes_duplicates (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            checked_at TEXT NOT NULL,
+            portal_id TEXT NOT NULL,
+            contact_id TEXT NOT NULL,
+            email TEXT,
+            duplicate_key_type TEXT NOT NULL,
+            duplicate_key TEXT NOT NULL,
+            notes_in_group INTEGER NOT NULL,
+            redundant_count INTEGER NOT NULL,
+            note_body TEXT,
+            note_ids_json TEXT NOT NULL,
+            first_hs_createdate TEXT,
+            last_hs_createdate TEXT
+        )
+    """)
+    
+    # Create indexes
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_notes_duplicates_email ON notes_duplicates(email)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_notes_duplicates_contact ON notes_duplicates(contact_id)")
+    conn.commit()
+    
+    # Clear table unless resuming or appending
+    should_clear = not (resume_cursor or append)
+    if should_clear:
+        cursor.execute("DELETE FROM notes_duplicates")
+        conn.commit()
+        print("Cleared existing duplicate records", file=sys.stderr)
+    elif resume_cursor:
+        print("Resuming: keeping existing duplicate records", file=sys.stderr)
+    elif append:
+        print("Appending: keeping existing duplicate records", file=sys.stderr)
+    
+    # Initialize counters
+    contacts_scanned = saved_cursor.get('contacts_scanned', 0) if saved_cursor else 0
+    contacts_with_email = 0
+    contacts_with_any_notes = 0
+    contacts_with_candidate_notes = 0
+    contacts_with_duplicates = 0
+    duplicate_groups_found = 0
+    redundant_notes_total = 0
+    api_calls = 0
+    
+    checked_at = datetime.now(timezone.utc).isoformat()
+    
+    # Print scan parameters
+    print("\nScan parameters:", file=sys.stderr)
+    print(f"  Mode: {mode}", file=sys.stderr)
+    print(f"  Max contacts: {max_contacts if max_contacts > 0 else 'unlimited'}", file=sys.stderr)
+    print(f"  Notes limit per contact: {notes_limit_per_contact}", file=sys.stderr)
+    print(f"  Resume enabled: {resume_cursor}", file=sys.stderr)
+    print(f"  Cursor file: {cursor_file}", file=sys.stderr)
+    print(f"  Checkpoint every: {checkpoint_every} contacts", file=sys.stderr)
+    print(f"  Progress every: {progress_every} contacts", file=sys.stderr)
+    if jsonl_path:
+        print(f"  JSONL path: {jsonl_path}", file=sys.stderr)
+    if saved_cursor:
+        print(f"  Resuming from: contacts_scanned={contacts_scanned}, after={saved_cursor.get('after', 'N/A')[:30] if saved_cursor.get('after') else 'N/A'}", file=sys.stderr)
+    
+    # Process contacts based on mode
+    if mode == "jsonl":
+        # Load contact IDs from JSONL
+        print("\nLoading contact IDs from JSONL...", file=sys.stderr)
+        contact_ids_to_check = []
+        
+        if not os.path.exists(jsonl_path):
+            print(f"Error: JSONL file not found: {jsonl_path}", file=sys.stderr)
+            conn.close()
+            sys.exit(2)
+        
+        try:
+            with open(jsonl_path, 'r', encoding='utf-8') as f:
+                for line_num, line in enumerate(f, 1):
+                    line = line.strip()
+                    if not line:
+                        continue
+                    
+                    try:
+                        record = json.loads(line)
+                        contact_id = record.get('contactId') or record.get('contact_id')
+                        email = record.get('email', '').strip()
+                        
+                        if contact_id:
+                            contact_ids_to_check.append((contact_id, email))
+                        elif email:
+                            # Look up contact ID by email
+                            api_calls += 1
+                            search_url = f"{BASE_URL}/crm/v3/objects/contacts/search"
+                            search_payload = {
+                                'filterGroups': [{
+                                    'filters': [{
+                                        'propertyName': 'email',
+                                        'operator': 'EQ',
+                                        'value': email
+                                    }]
+                                }],
+                                'properties': ['email'],
+                                'limit': 1
+                            }
+                            try:
+                                search_response = hubspot_post(search_url, search_payload, token=token, timeout=timeout)
+                                search_results = search_response.get('results', [])
+                                if search_results:
+                                    found_contact_id = search_results[0].get('id', '')
+                                    if found_contact_id:
+                                        contact_ids_to_check.append((found_contact_id, email))
+                            except Exception as e:
+                                print(f"  Warning: Failed to lookup contact for email {email}: {e}", file=sys.stderr)
+                                continue
+                    except json.JSONDecodeError as e:
+                        print(f"  Warning: Failed to parse line {line_num}: {e}", file=sys.stderr)
+                        continue
+            
+            print(f"Loaded {len(contact_ids_to_check)} contact IDs from JSONL", file=sys.stderr)
+            
+            # Apply max_contacts limit if set
+            if max_contacts > 0 and len(contact_ids_to_check) > max_contacts:
+                contact_ids_to_check = contact_ids_to_check[:max_contacts]
+                print(f"Limited to {max_contacts} contacts", file=sys.stderr)
+            
+            # Process each contact
+            # Use mutable list references for counters
+            api_calls_ref = [api_calls]
+            contacts_with_email_ref = [contacts_with_email]
+            contacts_with_any_notes_ref = [contacts_with_any_notes]
+            contacts_with_candidate_notes_ref = [contacts_with_candidate_notes]
+            contacts_with_duplicates_ref = [contacts_with_duplicates]
+            duplicate_groups_found_ref = [duplicate_groups_found]
+            redundant_notes_total_ref = [redundant_notes_total]
+            
+            for idx, (contact_id, email) in enumerate(contact_ids_to_check, 1):
+                contacts_scanned += 1
+                contacts_with_email_ref[0] += 1  # All JSONL contacts have email
+                
+                # Process contact
+                _process_contact_for_duplicates(
+                    contact_id, email, token, notes_limit_per_contact, portal_id, checked_at,
+                    cursor, conn, api_calls_ref, contacts_with_email_ref, contacts_with_any_notes_ref,
+                    contacts_with_candidate_notes_ref, contacts_with_duplicates_ref, duplicate_groups_found_ref,
+                    redundant_notes_total_ref, timeout
+                )
+                
+                # Progress update
+                if contacts_scanned % progress_every == 0:
+                    print(f"  Progress: scanned={contacts_scanned}/{len(contact_ids_to_check)}, "
+                          f"with_email={contacts_with_email_ref[0]}, with_notes={contacts_with_any_notes_ref[0]}, "
+                          f"with_candidates={contacts_with_candidate_notes_ref[0]}, with_duplicates={contacts_with_duplicates_ref[0]}, "
+                          f"groups={duplicate_groups_found_ref[0]}, redundant={redundant_notes_total_ref[0]}, api_calls={api_calls_ref[0]}", file=sys.stderr)
+                
+                # Checkpoint
+                if contacts_scanned % checkpoint_every == 0:
+                    cursor_data = {
+                        'portalId': portal_id,
+                        'after': None,  # No paging in JSONL mode
+                        'contacts_scanned': contacts_scanned,
+                        'updatedAt': datetime.now(timezone.utc).isoformat(),
+                        'max_contacts': max_contacts if max_contacts > 0 else None,
+                        'notes_limit_per_contact': notes_limit_per_contact,
+                        'mode': mode,
+                        'jsonl_path': jsonl_path
+                    }
+                    save_duplicates_cursor(cursor_file, cursor_data)
+        
+        except Exception as e:
+            print(f"Error: Failed to process JSONL file: {e}", file=sys.stderr)
+            conn.close()
+            sys.exit(2)
+    
+    else:
+        # Full contact scan mode with pagination
+        print("\nFetching contacts...", file=sys.stderr)
+        after = saved_cursor.get('after') if saved_cursor else None
+        page_num = 0
+        
+        # Use mutable list references for counters (initialize once outside loop)
+        api_calls_ref = [api_calls]
+        contacts_with_email_ref = [contacts_with_email]
+        contacts_with_any_notes_ref = [contacts_with_any_notes]
+        contacts_with_candidate_notes_ref = [contacts_with_candidate_notes]
+        contacts_with_duplicates_ref = [contacts_with_duplicates]
+        duplicate_groups_found_ref = [duplicate_groups_found]
+        redundant_notes_total_ref = [redundant_notes_total]
+        
+        while True:
+            # Check max_contacts limit
+            if max_contacts > 0 and contacts_scanned >= max_contacts:
+                print(f"\nReached max_contacts={max_contacts}, stopping", file=sys.stderr)
+                break
+            
+            # Fetch page of contacts
+            url = f"{BASE_URL}/crm/v3/objects/contacts"
+            params = {
+                'limit': 100,
+                'properties': 'email'
+            }
+            if after:
+                params['after'] = after
+            
+            api_calls_ref[0] += 1
+            response = hubspot_get(url, params=params, token=token, timeout=timeout)
+            results = response.get('results', [])
+            page_num += 1
+            
+            if not results:
+                break
+            
+            # Print first page status immediately
+            if page_num == 1:
+                paging = response.get('paging', {})
+                next_page = paging.get('next', {})
+                next_after = next_page.get('after')
+                print(f"Fetched page {page_num}: results={len(results)}, next_after={next_after[:30] if next_after else 'none'}...", file=sys.stderr)
+            
+            # Process contacts in this page
+            
+            for contact in results:
+                contacts_scanned += 1
+                
+                # Check max_contacts limit
+                if max_contacts > 0 and contacts_scanned > max_contacts:
+                    break
+                
+                contact_id = contact.get('id', '')
+                email_raw = contact.get('properties', {}).get('email')
+                email = (email_raw or '').strip()
+                
+                if not email:
+                    continue
+                
+                contacts_with_email_ref[0] += 1
+                
+                # Process contact
+                _process_contact_for_duplicates(
+                    contact_id, email, token, notes_limit_per_contact, portal_id, checked_at,
+                    cursor, conn, api_calls_ref, contacts_with_email_ref, contacts_with_any_notes_ref,
+                    contacts_with_candidate_notes_ref, contacts_with_duplicates_ref, duplicate_groups_found_ref,
+                    redundant_notes_total_ref, timeout
+                )
+                
+                # Update local counters from refs
+                api_calls = api_calls_ref[0]
+                contacts_with_email = contacts_with_email_ref[0]
+                contacts_with_any_notes = contacts_with_any_notes_ref[0]
+                contacts_with_candidate_notes = contacts_with_candidate_notes_ref[0]
+                contacts_with_duplicates = contacts_with_duplicates_ref[0]
+                duplicate_groups_found = duplicate_groups_found_ref[0]
+                redundant_notes_total = redundant_notes_total_ref[0]
+                
+                # Process contact for duplicates
+                _process_contact_for_duplicates(
+                    contact_id, email, token, notes_limit_per_contact, portal_id, checked_at,
+                    cursor, conn, api_calls_ref, contacts_with_email_ref, contacts_with_any_notes_ref,
+                    contacts_with_candidate_notes_ref, contacts_with_duplicates_ref, duplicate_groups_found_ref,
+                    redundant_notes_total_ref, timeout
+                )
+                
+                # Progress update
+                if contacts_scanned % progress_every == 0:
+                    paging = response.get('paging', {})
+                    next_page = paging.get('next', {})
+                    current_after = next_page.get('after', 'none')
+                    print(f"  Progress: scanned={contacts_scanned}, with_email={contacts_with_email_ref[0]}, "
+                          f"with_notes={contacts_with_any_notes_ref[0]}, with_candidates={contacts_with_candidate_notes_ref[0]}, "
+                          f"with_duplicates={contacts_with_duplicates_ref[0]}, groups={duplicate_groups_found_ref[0]}, "
+                          f"redundant={redundant_notes_total_ref[0]}, api_calls={api_calls_ref[0]}, after={current_after[:30] if current_after != 'none' else 'none'}...", file=sys.stderr)
+                
+                # Checkpoint
+                if contacts_scanned % checkpoint_every == 0:
+                    paging = response.get('paging', {})
+                    next_page = paging.get('next', {})
+                    next_after = next_page.get('after')
+                    cursor_data = {
+                        'portalId': portal_id,
+                        'after': next_after,
+                        'contacts_scanned': contacts_scanned,
+                        'updatedAt': datetime.now(timezone.utc).isoformat(),
+                        'max_contacts': max_contacts if max_contacts > 0 else None,
+                        'notes_limit_per_contact': notes_limit_per_contact,
+                        'mode': mode,
+                        'jsonl_path': None
+                    }
+                    save_duplicates_cursor(cursor_file, cursor_data)
+            
+            # Check for next page
+            paging = response.get('paging', {})
+            next_page = paging.get('next', {})
+            after = next_page.get('after')
+            
+            if not after:
+                break
+            
+            # Check max_contacts limit
+            if max_contacts > 0 and contacts_scanned >= max_contacts:
+                break
+        
+        # Save final checkpoint
+        cursor_data = {
+            'portalId': portal_id,
+            'after': None,  # Completed
+            'contacts_scanned': contacts_scanned,
+            'updatedAt': datetime.now(timezone.utc).isoformat(),
+            'max_contacts': max_contacts if max_contacts > 0 else None,
+            'notes_limit_per_contact': notes_limit_per_contact,
+            'mode': mode,
+            'jsonl_path': None
+        }
+        save_duplicates_cursor(cursor_file, cursor_data)
+        
+        # Extract final counter values from refs
+        api_calls = api_calls_ref[0]
+        contacts_with_email = contacts_with_email_ref[0]
+        contacts_with_any_notes = contacts_with_any_notes_ref[0]
+        contacts_with_candidate_notes = contacts_with_candidate_notes_ref[0]
+        contacts_with_duplicates = contacts_with_duplicates_ref[0]
+        duplicate_groups_found = duplicate_groups_found_ref[0]
+        redundant_notes_total = redundant_notes_total_ref[0]
+    
+    # Extract final counter values for JSONL mode
+    if mode == "jsonl":
+        api_calls = api_calls_ref[0]
+        contacts_with_email = contacts_with_email_ref[0]
+        contacts_with_any_notes = contacts_with_any_notes_ref[0]
+        contacts_with_candidate_notes = contacts_with_candidate_notes_ref[0]
+        contacts_with_duplicates = contacts_with_duplicates_ref[0]
+        duplicate_groups_found = duplicate_groups_found_ref[0]
+        redundant_notes_total = redundant_notes_total_ref[0]
+    
+    # Get final row count
+    cursor.execute("SELECT COUNT(*) FROM notes_duplicates")
+    table_row_count = cursor.fetchone()[0]
+    
+    conn.close()
+    
+    # Print summary
+    print("\n" + "=" * 60, file=sys.stderr)
+    print("SUMMARY", file=sys.stderr)
+    print("=" * 60, file=sys.stderr)
+    print(f"Total contacts scanned: {contacts_scanned}", file=sys.stderr)
+    print(f"Contacts with email: {contacts_with_email}", file=sys.stderr)
+    print(f"Contacts with any notes: {contacts_with_any_notes}", file=sys.stderr)
+    print(f"Contacts with candidate notes: {contacts_with_candidate_notes}", file=sys.stderr)
+    print(f"Contacts with duplicates: {contacts_with_duplicates}", file=sys.stderr)
+    print(f"Total duplicate groups found: {duplicate_groups_found}", file=sys.stderr)
+    print(f"Total redundant notes: {redundant_notes_total}", file=sys.stderr)
+    print(f"API calls made: {api_calls}", file=sys.stderr)
+    print(f"Database path: {db_path}", file=sys.stderr)
+    print(f"Table rows inserted: {table_row_count}", file=sys.stderr)
+    
+    # Print top 10 duplicates
+    if table_row_count > 0:
+        print("\nTop 10 duplicate groups (by redundant_count):", file=sys.stderr)
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT email, duplicate_key_type, notes_in_group, redundant_count, 
+                   first_hs_createdate, last_hs_createdate
+            FROM notes_duplicates
+            ORDER BY redundant_count DESC
+            LIMIT 10
+        """)
+        rows = cursor.fetchall()
+        for i, row in enumerate(rows, 1):
+            email, key_type, notes_in_group, redundant_count, first_date, last_date = row
+            print(f"  {i}. {email}: {key_type} key, {notes_in_group} notes ({redundant_count} redundant), "
+                  f"dates: {first_date} to {last_date}", file=sys.stderr)
+        conn.close()
+    
+    print("\nTo inspect results: open the sqlite DB and query notes_duplicates", file=sys.stderr)
+    print("\nSuggested commands:", file=sys.stderr)
+    print("  Full scan with resume:", file=sys.stderr)
+    print("    python get_forms.py --check-duplicates --resume-cursor", file=sys.stderr)
+    print("  Fresh scan:", file=sys.stderr)
+    print("    python get_forms.py --check-duplicates", file=sys.stderr)
+    print("  Fast targeted scan:", file=sys.stderr)
+    print("    python get_forms.py --check-duplicates-from-jsonl ./out/created_note_keys.jsonl", file=sys.stderr)
 
 
 if __name__ == '__main__':
